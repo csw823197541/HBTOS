@@ -47,8 +47,43 @@ public class SmartVesselContainerInfo {
     private String machineStatus; //作业中的箱子有这个字段，作业这个箱子的机械状态
     private String interactLanetp; //箱子在AGV上，是否派发车道
     private String cntHeightDesc;//箱子具体高度描述
-
     private Boolean fixedWeightlevel; //是否指定重量等级
+    private String cwoManualWorkflow; //人工指定作业工艺
+    private String cwoManualSeqno; //人工指定作业顺序
+    private String cwoManualWi; //人工锁定的船箱位，发箱时不能作业的箱子，CWP计划排到最后面
+    private String cwoManualLocation; //发箱服务箱子交换规则中，指定不允许交换的船箱位
+
+    public String getCwoManualWorkflow() {
+        return cwoManualWorkflow;
+    }
+
+    public void setCwoManualWorkflow(String cwoManualWorkflow) {
+        this.cwoManualWorkflow = cwoManualWorkflow;
+    }
+
+    public String getCwoManualSeqno() {
+        return cwoManualSeqno;
+    }
+
+    public void setCwoManualSeqno(String cwoManualSeqno) {
+        this.cwoManualSeqno = cwoManualSeqno;
+    }
+
+    public String getCwoManualWi() {
+        return cwoManualWi;
+    }
+
+    public void setCwoManualWi(String cwoManualWi) {
+        this.cwoManualWi = cwoManualWi;
+    }
+
+    public String getCwoManualLocation() {
+        return cwoManualLocation;
+    }
+
+    public void setCwoManualLocation(String cwoManualLocation) {
+        this.cwoManualLocation = cwoManualLocation;
+    }
 
     public Boolean getFixedWeightlevel() {
         return fixedWeightlevel;
