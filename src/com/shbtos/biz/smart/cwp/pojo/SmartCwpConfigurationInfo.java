@@ -1,5 +1,7 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 /**
  * Created by csw on 2017/4/19 20:04.
  * Explain: CWP算法相关的配置参数
@@ -32,6 +34,34 @@ public class SmartCwpConfigurationInfo {
     private String ldStrategy;//装卸策略，即边装边卸：BLD、一般装卸：LD，默认驳船不做边装边卸，大船能做边装边卸就做
 
     private Long autoDelCraneAmount; //自动减桥机参数，当剩余多少量时可以减掉旁边的桥机
+
+    private Boolean keyBay; //重点路权重方法，默认值是true。false：表示不调用这个方法；true：则相反
+    private Boolean changeSideCraneWork; //两边桥机回来作业的方法，默认值是true。false：表示不调用，两边桥机会回来作业；true：则相反
+    private Boolean divideByMaxRoad; //按最大作业量那条路将船舶分两边，最大量一部桥机作业，两边桥机平均分配剩余作业量，默认值为false。
+
+    public Boolean getKeyBay() {
+        return keyBay;
+    }
+
+    public void setKeyBay(Boolean keyBay) {
+        this.keyBay = keyBay;
+    }
+
+    public Boolean getChangeSideCraneWork() {
+        return changeSideCraneWork;
+    }
+
+    public void setChangeSideCraneWork(Boolean changeSideCraneWork) {
+        this.changeSideCraneWork = changeSideCraneWork;
+    }
+
+    public Boolean getDivideByMaxRoad() {
+        return divideByMaxRoad;
+    }
+
+    public void setDivideByMaxRoad(Boolean divideByMaxRoad) {
+        this.divideByMaxRoad = divideByMaxRoad;
+    }
 
     public Long getAutoDelCraneAmount() {
         return autoDelCraneAmount;
