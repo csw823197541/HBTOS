@@ -13,6 +13,15 @@ public class SmartReAutoStowInfo {
     private String cszCsizecd;        //尺寸
     private Long voyageId;    //出口航次信息
     private String unStowedReason;  //未配载原因
+    private String stowOrder; //配载顺序
+
+    public String getStowOrder() {
+        return stowOrder;
+    }
+
+    public void setStowOrder(String stowOrder) {
+        this.stowOrder = stowOrder;
+    }
 
     public Long getBerthId() {
         return berthId;
