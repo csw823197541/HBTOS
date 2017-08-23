@@ -17,6 +17,8 @@ public class SmartReAutoWiInfo {
     private String workFlow;
     private Long carryOrder; //装上AGV的顺序，同一序号的指令要同时给出
     private String cancelwork;
+    private String newVLocation; //交换后新的船箱位
+    private Long containerId; //在场箱Id
 
     public Long getBerthId() {
         return berthId;
@@ -96,5 +98,21 @@ public class SmartReAutoWiInfo {
 
     public void setCancelwork(String cancelwork) {
         this.cancelwork = cancelwork;
+    }
+
+    public String getNewVLocation() {
+        return newVLocation;
+    }
+
+    public void setNewVLocation(String newVLocation) {
+        this.newVLocation = newVLocation;
+    }
+
+    public Long getContainerId() {
+        return containerId;
+    }
+
+    public void setContainerId(Long containerId) {
+        this.containerId = containerId;
     }
 }
