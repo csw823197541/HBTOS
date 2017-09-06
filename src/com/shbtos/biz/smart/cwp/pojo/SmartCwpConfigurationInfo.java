@@ -35,8 +35,9 @@ public class SmartCwpConfigurationInfo {
 
     private Long autoDelCraneAmount; //自动减桥机参数，当剩余多少量时可以减掉旁边的桥机
 
-    private Boolean keyBay; //重点路权重方法，默认值是true。false：表示不调用这个方法；true：则相反
-    private Boolean changeSideCraneWork; //两边桥机回来作业的方法，默认值是true。false：表示不调用，两边桥机会回来作业；true：则相反
+    private Boolean keyBay; //重点路权重方法，默认值是true，表示桥机开路会优先考虑量最多的倍位。false：表示不调用这个方法
+    private Boolean divideBay; //分割倍位权重，默认值为true，表示桥机换倍作业时，会优先考虑作业被分割了的倍位
+    private Boolean changeSideCraneWork; //控制两边桥机回来作业，默认值是true。
     private Boolean divideByMaxRoad; //按最大作业量那条路将船舶分两边，最大量一部桥机作业，两边桥机平均分配剩余作业量，默认值为false。
 
     public Boolean getKeyBay() {
@@ -45,6 +46,14 @@ public class SmartCwpConfigurationInfo {
 
     public void setKeyBay(Boolean keyBay) {
         this.keyBay = keyBay;
+    }
+
+    public Boolean getDivideBay() {
+        return divideBay;
+    }
+
+    public void setDivideBay(Boolean divideBay) {
+        this.divideBay = divideBay;
     }
 
     public Boolean getChangeSideCraneWork() {

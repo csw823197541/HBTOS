@@ -52,6 +52,15 @@ public class SmartVesselContainerInfo {
     private String cwoManualSeqno; //人工指定作业顺序
     private String cwoManualWi; //人工锁定的船箱位，发箱时不能作业的箱子，CWP计划排到最后面
     private String cwoManualLocation; //发箱服务箱子交换规则中，指定不允许交换的船箱位
+    private String dispatchedTask; //该指令是否已经派遣任务，Y表示已派遣；N表示没有，如已经产生AGV、ASC调度等任务
+
+    public String getDispatchedTask() {
+        return dispatchedTask;
+    }
+
+    public void setDispatchedTask(String dispatchedTask) {
+        this.dispatchedTask = dispatchedTask;
+    }
 
     public String getCwoManualWorkflow() {
         return cwoManualWorkflow;
