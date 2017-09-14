@@ -51,7 +51,7 @@ public class SmartWiImportData {
     /**
      * 指令相关的配置参数
      */
-    private SmartWiConfiguration smartWiConfiguration;
+    private List<SmartWiConfiguration> smartWiConfigurationList;
 
     //桥机作业块信息
     private List<SmartCwpWorkBlockInfo> smartCwpWorkBlockInfoList;
@@ -69,6 +69,7 @@ public class SmartWiImportData {
         smartVpsVslHatchsInfoList = new ArrayList<>();
         smartVpsVslLocationsInfoList = new ArrayList<>();
         smartVpsVslRowsInfoList = new ArrayList<>();
+        smartWiConfigurationList = new ArrayList<>();
     }
 
     public List<SmartCwpWorkBlockInfo> getSmartCwpWorkBlockInfoList() {
@@ -82,15 +83,12 @@ public class SmartWiImportData {
         this.smartCwpWorkBlockInfoList = smartCwpWorkBlockInfoList;
     }
 
-    public SmartWiConfiguration getSmartWiConfiguration() {
-        if (smartWiConfiguration == null) {
-            smartWiConfiguration = new SmartWiConfiguration();
-        }
-        return smartWiConfiguration;
+    public List<SmartWiConfiguration> getSmartWiConfigurationList() {
+        return smartWiConfigurationList;
     }
 
-    public void setSmartWiConfiguration(SmartWiConfiguration smartWiConfiguration) {
-        this.smartWiConfiguration = smartWiConfiguration;
+    public void setSmartWiConfigurationList(List<SmartWiConfiguration> smartWiConfigurationList) {
+        this.smartWiConfigurationList = smartWiConfigurationList;
     }
 
     public List<SmartScheduleIdInfo> getSmartScheduleIdInfoList() {
