@@ -26,11 +26,20 @@ public class SmartYardContainerInfo {
     private String isHeight; // 是否高箱
     private String heiCheightcd; //箱高代码
     private String effg;// 空/重标记
+    private String cntType; //箱子状态，DOC表示资料箱子
 
     private Date planStartWorkTime; //计划开始作业时间
     private Date planEndWorkTime; //计划结束作业时间
     private Integer workPlanCntNumber; //该箱子上面压着的的箱子数量
     private List<Long> wokPlanCntIdList; //该箱子上面压着的的箱子的箱Id,可以找到在场箱具体信息
+
+    public String getCntType() {
+        return cntType;
+    }
+
+    public void setCntType(String cntType) {
+        this.cntType = cntType;
+    }
 
     public String getHeiCheightcd() {
         return heiCheightcd;
