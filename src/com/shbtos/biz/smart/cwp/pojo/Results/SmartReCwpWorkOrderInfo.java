@@ -24,6 +24,15 @@ public class SmartReCwpWorkOrderInfo {
     private Integer qdc; //是否启动舱
     private Long planAmount;//生成大块是用到，一关一个对象
     private Long vpcCntrId; //箱指令唯一编号(指令模块专用)
+    private String recycleWiFlag; //回收重排的指令标记，Y表示回收的指令；N或者null表示非回收的指令
+
+    public String getRecycleWiFlag() {
+        return recycleWiFlag;
+    }
+
+    public void setRecycleWiFlag(String recycleWiFlag) {
+        this.recycleWiFlag = recycleWiFlag;
+    }
 
     public Long getVpcCntrId() {
         return vpcCntrId;

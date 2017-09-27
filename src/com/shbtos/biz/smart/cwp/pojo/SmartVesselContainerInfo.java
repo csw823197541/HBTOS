@@ -53,6 +53,15 @@ public class SmartVesselContainerInfo {
     private String cwoManualWi; //人工锁定的船箱位，发箱时不能作业的箱子，CWP计划排到最后面
     private String cwoManualLocation; //发箱服务箱子交换规则中，指定不允许交换的船箱位
     private String dispatchedTask; //该指令是否已经派遣任务，Y表示已派遣；N表示没有，如已经产生AGV、ASC调度等任务
+    private String canRecycleFlag; //指令是否可以回收标记，Y或者为空表示可以回收；N表示不可以回收，应该继续执行下去
+
+    public String getCanRecycleFlag() {
+        return canRecycleFlag;
+    }
+
+    public void setCanRecycleFlag(String canRecycleFlag) {
+        this.canRecycleFlag = canRecycleFlag;
+    }
 
     public String getDispatchedTask() {
         return dispatchedTask;
