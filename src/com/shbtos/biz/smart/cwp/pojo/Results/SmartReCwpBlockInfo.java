@@ -20,8 +20,6 @@ public class SmartReCwpBlockInfo {
     private Long hatchSeq;//某个桥机作业哪些舱的顺序
     private Date workingStartTime; //作业块计划开工时间
     private Date workingEndTime; //作业块计划完工时间
-    private Long blockId; //作业块Id，标记作业块的唯一性
-    private String deleteFlag; //删除标记，当传入作业块相应倍位m没有待作业的指令时，作业块标记为"Y"，否则为null或者为"N"
 
     public String getCurrentCraneBayNo() {
         return currentCraneBayNo;
@@ -119,20 +117,5 @@ public class SmartReCwpBlockInfo {
         this.workingEndTime = workingEndTime;
     }
 
-    public Long getBlockId() {
-        return blockId;
-    }
-
-    public void setBlockId(Long blockId) {
-        this.blockId = blockId;
-    }
-
-    public String getDeleteFlag() {
-        return deleteFlag;
-    }
-
-    public void setDeleteFlag(String deleteFlag) {
-        this.deleteFlag = deleteFlag;
-    }
 }
 
