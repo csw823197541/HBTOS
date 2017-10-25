@@ -1,6 +1,5 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 /**
  * Created by csw on 2017/4/19 20:04.
@@ -39,6 +38,16 @@ public class SmartCwpConfigurationInfo {
     private Boolean divideBay; //分割倍位权重，默认值为true，表示桥机换倍作业时，会优先考虑作业被分割了的倍位
     private Boolean changeSideCraneWork; //控制两边桥机回来作业，默认值是true。
     private Boolean divideByMaxRoad; //按最大作业量那条路将船舶分两边，最大量一部桥机作业，两边桥机平均分配剩余作业量，默认值为false。
+
+    private Integer loadFirstParam; //装船优先开路参数，该参数控制尽量先开装船的倍位，默认参数是2(可以调成更大)：桥机开路会尽量装卸错开开路；当参数调成0是：不进行装船优先考虑
+
+    public Integer getLoadFirstParam() {
+        return loadFirstParam;
+    }
+
+    public void setLoadFirstParam(Integer loadFirstParam) {
+        this.loadFirstParam = loadFirstParam;
+    }
 
     public Boolean getKeyBay() {
         return keyBay;
