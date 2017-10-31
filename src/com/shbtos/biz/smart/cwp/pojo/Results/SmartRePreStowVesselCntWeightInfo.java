@@ -11,6 +11,7 @@ public class SmartRePreStowVesselCntWeightInfo {
     private Long hatchId;         //舱ID
     private String vlocation;		//船箱位
     private Long weightId;       //重量等级ID
+    private Long groupId; //属性组
     private String lduld;    //装卸船标志
     private Boolean fixedWeightlevel; //是否指定重量等级
     private String modifyState;//重量等级修改状态，即是否为算法新增的字段：autoStowWeight表示新增重量等级信息
@@ -53,6 +54,14 @@ public class SmartRePreStowVesselCntWeightInfo {
 
     public void setWeightId(Long weightId) {
         this.weightId = weightId;
+    }
+
+    public Long getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(Long groupId) {
+        this.groupId = groupId;
     }
 
     public String getLduld() {
