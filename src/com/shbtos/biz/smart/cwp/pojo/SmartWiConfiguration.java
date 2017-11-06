@@ -11,6 +11,8 @@ public class SmartWiConfiguration {
     private Long deckWeightDifference; //甲板上箱子交换重量差参数
     private Long hatchWeightDifference; //舱下箱子交换重量差参数
     private Long hatchSideWeightDifference; //甲板上里外档两跟槽重量差参数
+    private Boolean crossBridge; //是否过驾驶台
+    private Boolean crossChimney; //是否果烟囱
 
     public Long getBerthId() {
         return berthId;
@@ -50,5 +52,21 @@ public class SmartWiConfiguration {
 
     public void setIntervalTime(Long intervalTime) {
         this.intervalTime = intervalTime;
+    }
+
+    public Boolean getCrossBridge() {
+        return crossBridge;
+    }
+
+    public void setCrossBridge(Boolean crossBridge) {
+        this.crossBridge = crossBridge;
+    }
+
+    public Boolean getCrossChimney() {
+        return crossChimney;
+    }
+
+    public void setCrossChimney(Boolean crossChimney) {
+        this.crossChimney = crossChimney;
     }
 }

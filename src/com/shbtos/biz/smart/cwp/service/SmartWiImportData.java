@@ -62,6 +62,10 @@ public class SmartWiImportData {
     private List<SmartVpsVslHatchsInfo> smartVpsVslHatchsInfoList;
     private List<SmartVpsVslLocationsInfo> smartVpsVslLocationsInfoList;
     private List<SmartVpsVslRowsInfo> smartVpsVslRowsInfoList;
+    private List<SmartVesselMachinesInfo> smartVesselMachinesInfoList;
+
+    //桥机维修计划
+    private List<SmartCraneMaintainPlanInfo> smartCraneMaintainPlanInfoList;
 
     public SmartWiImportData() {
         smartVpsVslBaysInfoList = new ArrayList<>();
@@ -70,6 +74,8 @@ public class SmartWiImportData {
         smartVpsVslLocationsInfoList = new ArrayList<>();
         smartVpsVslRowsInfoList = new ArrayList<>();
         smartWiConfigurationList = new ArrayList<>();
+        smartCraneMaintainPlanInfoList = new ArrayList<>();
+        smartVesselMachinesInfoList = new ArrayList<>();
     }
 
     public List<SmartCwpWorkBlockInfo> getSmartCwpWorkBlockInfoList() {
@@ -221,5 +227,21 @@ public class SmartWiImportData {
 
     public void setSmartVpsVslRowsInfoList(List<SmartVpsVslRowsInfo> smartVpsVslRowsInfoList) {
         this.smartVpsVslRowsInfoList = smartVpsVslRowsInfoList;
+    }
+
+    public List<SmartCraneMaintainPlanInfo> getSmartCraneMaintainPlanInfoList() {
+        return smartCraneMaintainPlanInfoList;
+    }
+
+    public void setSmartCraneMaintainPlanInfoList(List<SmartCraneMaintainPlanInfo> smartCraneMaintainPlanInfoList) {
+        this.smartCraneMaintainPlanInfoList = smartCraneMaintainPlanInfoList;
+    }
+
+    public List<SmartVesselMachinesInfo> getSmartVesselMachinesInfoList() {
+        return smartVesselMachinesInfoList;
+    }
+
+    public void setSmartVesselMachinesInfoList(List<SmartVesselMachinesInfo> smartVesselMachinesInfoList) {
+        this.smartVesselMachinesInfoList = smartVesselMachinesInfoList;
     }
 }
