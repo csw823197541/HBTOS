@@ -13,6 +13,7 @@ public class SmartWiConfiguration {
     private Long hatchSideWeightDifference; //甲板上里外档两跟槽重量差参数
     private Boolean crossBridge; //是否过驾驶台
     private Boolean crossChimney; //是否果烟囱
+    private Long crossBarTime;//桥机跨机械起趴大梁移动时间，15分钟
 
     public Long getBerthId() {
         return berthId;
@@ -68,5 +69,13 @@ public class SmartWiConfiguration {
 
     public void setCrossChimney(Boolean crossChimney) {
         this.crossChimney = crossChimney;
+    }
+
+    public Long getCrossBarTime() {
+        return crossBarTime;
+    }
+
+    public void setCrossBarTime(Long crossBarTime) {
+        this.crossBarTime = crossBarTime;
     }
 }
