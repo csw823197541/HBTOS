@@ -8,6 +8,7 @@ public class SmartWiConfiguration {
 
     private Long berthId; //靠泊Id
     private Long intervalTime;//获取某时间段的指令
+    private Double craneSafeSpan; //桥机安全距离
     private Long deckWeightDifference; //甲板上箱子交换重量差参数
     private Long hatchWeightDifference; //舱下箱子交换重量差参数
     private Long hatchSideWeightDifference; //甲板上里外档两跟槽重量差参数
@@ -21,6 +22,22 @@ public class SmartWiConfiguration {
 
     public void setBerthId(Long berthId) {
         this.berthId = berthId;
+    }
+
+    public Long getIntervalTime() {
+        return intervalTime;
+    }
+
+    public void setIntervalTime(Long intervalTime) {
+        this.intervalTime = intervalTime;
+    }
+
+    public Double getCraneSafeSpan() {
+        return craneSafeSpan;
+    }
+
+    public void setCraneSafeSpan(Double craneSafeSpan) {
+        this.craneSafeSpan = craneSafeSpan;
     }
 
     public Long getDeckWeightDifference() {
@@ -45,14 +62,6 @@ public class SmartWiConfiguration {
 
     public void setHatchSideWeightDifference(Long hatchSideWeightDifference) {
         this.hatchSideWeightDifference = hatchSideWeightDifference;
-    }
-
-    public Long getIntervalTime() {
-        return intervalTime;
-    }
-
-    public void setIntervalTime(Long intervalTime) {
-        this.intervalTime = intervalTime;
     }
 
     public Boolean getCrossBridge() {
