@@ -16,6 +16,7 @@ public class SmartCwpValidatorImportData {
     private List<SmartWiConfiguration> smartWiConfigurationList;
 
     private List<SmartCraneWorkStartTmInfo> smartCraneWorkStartTmInfoList;
+    private List<SmartCraneBaseInfo> smartCraneBaseInfoList;
     private List<SmartCraneMaintainPlanInfo> smartCraneMaintainPlanInfoList;
 
     private List<SmartVpsVslHatchsInfo> smartVpsVslHatchsInfoList;
@@ -29,6 +30,7 @@ public class SmartCwpValidatorImportData {
         smartScheduleIdInfoList = new ArrayList<>();
         smartWiConfigurationList = new ArrayList<>();
         smartCraneWorkStartTmInfoList = new ArrayList<>();
+        smartCraneBaseInfoList = new ArrayList<>();
         smartCraneMaintainPlanInfoList = new ArrayList<>();
         smartVpsVslHatchsInfoList = new ArrayList<>();
         smartVpsVslBaysInfoList = new ArrayList<>();
@@ -59,6 +61,14 @@ public class SmartCwpValidatorImportData {
 
     public void setSmartCraneWorkStartTmInfoList(List<SmartCraneWorkStartTmInfo> smartCraneWorkStartTmInfoList) {
         this.smartCraneWorkStartTmInfoList = smartCraneWorkStartTmInfoList;
+    }
+
+    public List<SmartCraneBaseInfo> getSmartCraneBaseInfoList() {
+        return smartCraneBaseInfoList;
+    }
+
+    public void setSmartCraneBaseInfoList(List<SmartCraneBaseInfo> smartCraneBaseInfoList) {
+        this.smartCraneBaseInfoList = smartCraneBaseInfoList;
     }
 
     public List<SmartCraneMaintainPlanInfo> getSmartCraneMaintainPlanInfoList() {
