@@ -13,6 +13,7 @@ public class SmartStowageConfigurationInfo {
     private Double proportion; //箱区装卸能力比：箱区的装卸比例，给卸船空出工作能力，默认值0.9，建议参考值范围0.8-0.9
     private Integer secondBoxPoint; //双箱的第二个箱子调整值：双箱的第二个箱子尽量同一箱区出箱，所以和第一个箱子同箱区的候选箱会减少罚分，默认值2000，建议参考值范围500-2000
     private Integer containerNumPoint; //双箱的第一个箱子调整值：双箱吊的第一个箱子，如果该箱区中该属性组重量等级的箱子多，则该箱区减少罚分，默认值100，建议参考值范围100-200
+    private Integer underWeightDifference; //舱内允许重量差
 
     public Long getBerthId() {
         return berthId;
@@ -76,5 +77,13 @@ public class SmartStowageConfigurationInfo {
 
     public void setContainerNumPoint(Integer containerNumPoint) {
         this.containerNumPoint = containerNumPoint;
+    }
+
+    public Integer getUnderWeightDifference() {
+        return underWeightDifference;
+    }
+
+    public void setUnderWeightDifference(Integer underWeightDifference) {
+        this.underWeightDifference = underWeightDifference;
     }
 }
