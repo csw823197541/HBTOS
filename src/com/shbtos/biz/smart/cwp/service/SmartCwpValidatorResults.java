@@ -17,12 +17,12 @@ public class SmartCwpValidatorResults {
     private SmartReMessageInfo smartReMessageInfo;
 
     private List<SmartReCwpValidatorInfo> smartReCwpValidatorInfoList;
-    private List<SmartCwpWorkBlockInfo> smartCwpWorkBlockInfoList;
+    private List<SmartReCwpBlockInfo> smartReCwpBlockInfoList;
 
     public SmartCwpValidatorResults() {
         smartReMessageInfo = new SmartReMessageInfo();
         smartReCwpValidatorInfoList = new ArrayList<>();
-        smartCwpWorkBlockInfoList = new ArrayList<>();
+        smartReCwpBlockInfoList = new ArrayList<>();
     }
 
     public SmartReMessageInfo getSmartReMessageInfo() {
@@ -41,11 +41,11 @@ public class SmartCwpValidatorResults {
         this.smartReCwpValidatorInfoList = smartReCwpValidatorInfoList;
     }
 
-    public List<SmartCwpWorkBlockInfo> getSmartCwpWorkBlockInfoList() {
-        return smartCwpWorkBlockInfoList;
+    public List<SmartReCwpBlockInfo> getSmartReCwpBlockInfoList() {
+        return smartReCwpBlockInfoList;
     }
 
-    public void setSmartCwpWorkBlockInfoList(List<SmartCwpWorkBlockInfo> smartCwpWorkBlockInfoList) {
-        this.smartCwpWorkBlockInfoList = smartCwpWorkBlockInfoList;
+    public void setSmartReCwpBlockInfoList(List<SmartReCwpBlockInfo> smartReCwpBlockInfoList) {
+        this.smartReCwpBlockInfoList = smartReCwpBlockInfoList;
     }
 }

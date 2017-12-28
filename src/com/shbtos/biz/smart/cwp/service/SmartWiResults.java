@@ -1,6 +1,7 @@
 package com.shbtos.biz.smart.cwp.service;
 
 import com.shbtos.biz.smart.cwp.pojo.Results.SmartReAutoWiInfo;
+import com.shbtos.biz.smart.cwp.pojo.Results.SmartReCwpBlockInfo;
 import com.shbtos.biz.smart.cwp.pojo.Results.SmartReMessageInfo;
 import com.shbtos.biz.smart.cwp.pojo.SmartCwpWorkBlockInfo;
 
@@ -15,12 +16,12 @@ public class SmartWiResults {
     private List<SmartReAutoWiInfo> smartReAutoWiInfos;
     private SmartReMessageInfo smartReMessageInfo;
 
-    private List<SmartCwpWorkBlockInfo> smartCwpWorkBlockInfoList;
+    private List<SmartReCwpBlockInfo> smartReCwpBlockInfoList;
 
     public SmartWiResults() {
         smartReAutoWiInfos = new ArrayList<>();
         smartReMessageInfo = new SmartReMessageInfo();
-        smartCwpWorkBlockInfoList = new ArrayList<>();
+        smartReCwpBlockInfoList = new ArrayList<>();
     }
 
     public SmartReMessageInfo getSmartReMessageInfo() {
@@ -39,11 +40,11 @@ public class SmartWiResults {
         this.smartReAutoWiInfos = smartReAutoWiInfos;
     }
 
-    public List<SmartCwpWorkBlockInfo> getSmartCwpWorkBlockInfoList() {
-        return smartCwpWorkBlockInfoList;
+    public List<SmartReCwpBlockInfo> getSmartReCwpBlockInfoList() {
+        return smartReCwpBlockInfoList;
     }
 
-    public void setSmartCwpWorkBlockInfoList(List<SmartCwpWorkBlockInfo> smartCwpWorkBlockInfoList) {
-        this.smartCwpWorkBlockInfoList = smartCwpWorkBlockInfoList;
+    public void setSmartReCwpBlockInfoList(List<SmartReCwpBlockInfo> smartReCwpBlockInfoList) {
+        this.smartReCwpBlockInfoList = smartReCwpBlockInfoList;
     }
 }

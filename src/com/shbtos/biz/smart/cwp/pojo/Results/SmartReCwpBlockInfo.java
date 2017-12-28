@@ -13,7 +13,7 @@ public class SmartReCwpBlockInfo {
     private String bayNo; //倍位No
     private String currentCraneBayNo;//桥机当前所在倍位
     private Long hatchId; //舱ID
-    private Long planAmount; //作业块Move总数
+    private Long planAmount; //作业块Move总数，计划作业总量
     private Double cranePosition;//桥机当前位置
     private String lduldfg; //装卸船标志
     private Long craneSeq;//作业某个舱所有桥机的作业顺序
@@ -21,6 +21,9 @@ public class SmartReCwpBlockInfo {
     private Date workingStartTime; //作业块计划开工时间
     private Date workingEndTime; //作业块计划完工时间
     private Long blockId; //作业块Id
+    private String deleteFlag; //删除标记，当传入作业块相应倍位没有待作业的指令时，作业块标记为"Y"，否则为null或者为"N"
+    private String workStatus; //作业块的作业状态
+    private Long sentAmount; //已发送的Move数量
     private String blockMessage; //作业块信息，主要是当作业量与实际指令数目不符合的时候，给出提示信息
 
     public String getBlockMessage() {
@@ -29,6 +32,30 @@ public class SmartReCwpBlockInfo {
 
     public void setBlockMessage(String blockMessage) {
         this.blockMessage = blockMessage;
+    }
+
+    public String getDeleteFlag() {
+        return deleteFlag;
+    }
+
+    public void setDeleteFlag(String deleteFlag) {
+        this.deleteFlag = deleteFlag;
+    }
+
+    public String getWorkStatus() {
+        return workStatus;
+    }
+
+    public void setWorkStatus(String workStatus) {
+        this.workStatus = workStatus;
+    }
+
+    public Long getSentAmount() {
+        return sentAmount;
+    }
+
+    public void setSentAmount(Long sentAmount) {
+        this.sentAmount = sentAmount;
     }
 
     public Long getBlockId() {
