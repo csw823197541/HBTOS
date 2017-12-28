@@ -20,6 +20,24 @@ public class SmartReCwpBlockInfo {
     private Long hatchSeq;//某个桥机作业哪些舱的顺序
     private Date workingStartTime; //作业块计划开工时间
     private Date workingEndTime; //作业块计划完工时间
+    private Long blockId; //作业块Id
+    private String blockMessage; //作业块信息，主要是当作业量与实际指令数目不符合的时候，给出提示信息
+
+    public String getBlockMessage() {
+        return blockMessage;
+    }
+
+    public void setBlockMessage(String blockMessage) {
+        this.blockMessage = blockMessage;
+    }
+
+    public Long getBlockId() {
+        return blockId;
+    }
+
+    public void setBlockId(Long blockId) {
+        this.blockId = blockId;
+    }
 
     public String getCurrentCraneBayNo() {
         return currentCraneBayNo;
