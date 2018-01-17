@@ -40,6 +40,7 @@ public class SmartCwpImportData {
     private List<SmartCraneMoveRangeInfo> smartCraneMoveRangeInfoList;
 
     private List<SmartCwpConfigurationInfo> smartCwpConfigurationInfoList;
+    private List<SmartCraneAddOrDelInfo> smartCraneAddOrDelInfoList;
 
     public SmartCwpImportData(){
         this.smartAdviseConfigureInfoList = new ArrayList<>();
@@ -69,6 +70,15 @@ public class SmartCwpImportData {
         this.smartCraneMaintainPlanInfoList = new ArrayList<>();
         this.smartCraneMoveRangeInfoList = new ArrayList<>();
         this.smartCwpConfigurationInfoList = new ArrayList<>();
+        this.smartCraneAddOrDelInfoList = new ArrayList<>();
+    }
+
+    public List<SmartCraneAddOrDelInfo> getSmartCraneAddOrDelInfoList() {
+        return smartCraneAddOrDelInfoList;
+    }
+
+    public void setSmartCraneAddOrDelInfoList(List<SmartCraneAddOrDelInfo> smartCraneAddOrDelInfoList) {
+        this.smartCraneAddOrDelInfoList = smartCraneAddOrDelInfoList;
     }
 
     public List<SmartCwpConfigurationInfo> getSmartCwpConfigurationInfoList() {
