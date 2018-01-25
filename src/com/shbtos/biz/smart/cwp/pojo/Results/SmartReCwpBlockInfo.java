@@ -25,6 +25,15 @@ public class SmartReCwpBlockInfo {
     private String workStatus; //作业块的作业状态
     private Long sentAmount; //已发送的Move数量
     private String blockMessage; //作业块信息，主要是当作业量与实际指令数目不符合的时候，给出提示信息
+    private String lockFlag; //是否被锁住标记，时间往后安排，Y表示锁住；N或者null表示正常执行的指令
+
+    public String getLockFlag() {
+        return lockFlag;
+    }
+
+    public void setLockFlag(String lockFlag) {
+        this.lockFlag = lockFlag;
+    }
 
     public String getBlockMessage() {
         return blockMessage;

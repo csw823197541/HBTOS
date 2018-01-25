@@ -25,6 +25,15 @@ public class SmartReCwpWorkOrderInfo {
     private Long planAmount;//生成大块是用到，一关一个对象
     private Long vpcCntrId; //箱指令唯一编号(指令模块专用)
     private String recycleWiFlag; //回收重排的指令标记，Y表示回收的指令；N或者null表示非回收的指令
+    private String lockFlag; //是否被锁住标记，时间往后安排，Y表示锁住；N或者null表示正常执行的指令
+
+    public String getLockFlag() {
+        return lockFlag;
+    }
+
+    public void setLockFlag(String lockFlag) {
+        this.lockFlag = lockFlag;
+    }
 
     public String getRecycleWiFlag() {
         return recycleWiFlag;
