@@ -6,10 +6,10 @@ package com.shbtos.biz.smart.cwp.pojo.Results;
  */
 public class SmartReExchangedWiInfo {
 
-    private Long berthId;
-    private Long vpcCntId;
-    private String vLocation;
-    private Long yardContainerId;
+    private Long berthId; //靠泊Id
+    private Long vpcCntId; //船图箱Id
+    private String vLocation; //船箱位信息
+    private Long yardContainerId; //交换后新的在场箱Id
 
     public Long getBerthId() {
         return berthId;
