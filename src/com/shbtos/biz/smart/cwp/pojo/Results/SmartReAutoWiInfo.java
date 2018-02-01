@@ -12,11 +12,12 @@ public class SmartReAutoWiInfo {
     private String vLocation;   //船上位置
     private String craneNo;//作业的桥吊
     private Long cwpwkmovenum;
+    private String workFlow;
     private Date workingStartTime;
     private Date workingEndTime;
-    private String workFlow;
-    private Long carryOrder; //装上AGV的顺序，同一序号的指令要同时给出
     private Long yardContainerId; //在场箱Id
+    private Integer overCntNum;
+    private Long carryOrder; //装上AGV的顺序，同一序号的指令要同时给出
     private String cancelWork;
 
     public Long getBerthId() {
@@ -97,6 +98,14 @@ public class SmartReAutoWiInfo {
 
     public void setYardContainerId(Long yardContainerId) {
         this.yardContainerId = yardContainerId;
+    }
+
+    public Integer getOverCntNum() {
+        return overCntNum;
+    }
+
+    public void setOverCntNum(Integer overCntNum) {
+        this.overCntNum = overCntNum;
     }
 
     public String getCancelWork() {
