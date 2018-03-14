@@ -13,6 +13,7 @@ public class SmartVesselCranePoolInfo {
     private Long delCraneNumber;//增加桥吊数量
     private Date delCraneDate;         //增加桥吊时间
     private String autoCwp;         //是否自动调度
+    private String firstCraneNos; //定义开始作业的桥机有哪些，用逗号","隔开
 
     public Long getBerthId() {
         return berthId;
@@ -68,5 +69,13 @@ public class SmartVesselCranePoolInfo {
 
     public void setAutoCwp(String autoCwp) {
         this.autoCwp = autoCwp;
+    }
+
+    public String getFirstCraneNos() {
+        return firstCraneNos;
+    }
+
+    public void setFirstCraneNos(String firstCraneNos) {
+        this.firstCraneNos = firstCraneNos;
     }
 }

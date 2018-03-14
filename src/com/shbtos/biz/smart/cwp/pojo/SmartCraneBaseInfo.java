@@ -23,7 +23,7 @@ public class SmartCraneBaseInfo {
     private Integer craneWidth;//桥吊宽度
     private String craneStatus;//桥吊作业状态故障
     private String craneMoveStatus; //是否可以移动
-    private String craneMaxCarryWeight;//桥吊的最大作业吨位
+    private Integer craneMaxCarryWeight;//桥吊的最大作业吨位
     private Long workBerthId;         //靠泊ID
     private String workVesselBay;//当前作业倍位
 
@@ -187,11 +187,11 @@ public class SmartCraneBaseInfo {
         this.craneMoveStatus = craneMoveStatus;
     }
 
-    public String getCraneMaxCarryWeight() {
+    public Integer getCraneMaxCarryWeight() {
         return craneMaxCarryWeight;
     }
 
-    public void setCraneMaxCarryWeight(String craneMaxCarryWeight) {
+    public void setCraneMaxCarryWeight(Integer craneMaxCarryWeight) {
         this.craneMaxCarryWeight = craneMaxCarryWeight;
     }
 }
