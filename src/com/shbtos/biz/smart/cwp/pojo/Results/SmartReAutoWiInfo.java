@@ -10,6 +10,7 @@ public class SmartReAutoWiInfo {
     private Long berthId; //靠泊Id
     private Long vpcCntrId; //指令唯一编号
     private String vLocation;   //船上位置
+    private String yLocation; //场箱位
     private String craneNo;//作业的桥吊
     private Long cwpwkmovenum;
     private String workFlow;
@@ -42,6 +43,14 @@ public class SmartReAutoWiInfo {
 
     public void setvLocation(String vLocation) {
         this.vLocation = vLocation;
+    }
+
+    public String getyLocation() {
+        return yLocation;
+    }
+
+    public void setyLocation(String yLocation) {
+        this.yLocation = yLocation;
     }
 
     public String getCraneNo() {
