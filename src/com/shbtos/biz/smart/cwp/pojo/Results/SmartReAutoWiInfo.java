@@ -20,6 +20,9 @@ public class SmartReAutoWiInfo {
     private Integer overCntNum;
     private Long carryOrder; //装上AGV的顺序，同一序号的指令要同时给出
     private String cancelWork;
+    private String exchangeReason; //指令交换原因
+    private Date yardWorkingStartTime; //箱区计划作业开始时间
+    private Date yardWorkingEndTime; //箱区计划作业结束时间
 
     public Long getBerthId() {
         return berthId;
@@ -123,5 +126,29 @@ public class SmartReAutoWiInfo {
 
     public void setCancelWork(String cancelWork) {
         this.cancelWork = cancelWork;
+    }
+
+    public String getExchangeReason() {
+        return exchangeReason;
+    }
+
+    public void setExchangeReason(String exchangeReason) {
+        this.exchangeReason = exchangeReason;
+    }
+
+    public Date getYardWorkingStartTime() {
+        return yardWorkingStartTime;
+    }
+
+    public void setYardWorkingStartTime(Date yardWorkingStartTime) {
+        this.yardWorkingStartTime = yardWorkingStartTime;
+    }
+
+    public Date getYardWorkingEndTime() {
+        return yardWorkingEndTime;
+    }
+
+    public void setYardWorkingEndTime(Date yardWorkingEndTime) {
+        this.yardWorkingEndTime = yardWorkingEndTime;
     }
 }

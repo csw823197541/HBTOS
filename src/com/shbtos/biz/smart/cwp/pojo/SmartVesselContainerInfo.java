@@ -48,14 +48,16 @@ public class SmartVesselContainerInfo {
     private String interactLanetp; //箱子在AGV上，是否派发车道
     private String cntHeightDesc;//箱子具体高度描述
     private Boolean fixedWeightlevel; //是否指定重量等级
-    private String cwoManualWorkflow; //人工指定作业工艺
-    private String cwoManualSeqno; //人工指定作业顺序
-    private String cwoManualWi; //人工锁定的船箱位，发箱时不能作业的箱子，CWP计划排到最后面
-    private String cwoManualLocation; //发箱服务箱子交换规则中，指定不允许交换的船箱位
+    private String cwoManualWorkflow; //人工指定作业工艺，Y表示人工指定作业工艺，N或者空表示非人工指定
+    private String cwoManualSeqno; //人工指定作业顺序，Y表示人工指定的作业顺序，N或者空表示非人工指定
+    private Long cwoManualBlockOrder; //人工指定的作业顺序按块区分，块与块之间有一个前后作业顺序
+    private String cwoManualWi; //人工锁定的船箱位，发箱时不能作业的箱子，CWP计划排到最后面，Y表示锁定的箱子，N或者空表示非锁定的箱子
+    private String cwoManualLocation; //发箱服务箱子交换规则中，指定不允许交换的船箱位，Y表示不能交换，N或者空表示可以交换
     private String dispatchedTask; //该指令是否已经派遣任务，Y表示已派遣；N表示没有，如已经产生AGV、ASC调度等任务
     private String canRecycleFlag; //指令是否可以回收标记，Y或者为空表示可以回收；N表示不可以回收，应该继续执行下去
     private String recycleWiFlag; //回收重排的指令标记，Y表示回收的指令；N或者null表示非回收的指令
     private String directCntFlag; //直装箱标记，Y表示箱子标记为直装箱，N或者null表示非直装箱子
+    private String dispatchedWiInfo; //表示该箱子是否派发了指令任务（如转堆），有的话发箱的时候暂时不发送，Y表示有wi，N或者空表示没有wi任务
 
     public String getDirectCntFlag() {
         return directCntFlag;
@@ -439,5 +441,21 @@ public class SmartVesselContainerInfo {
 
     public void setIsHeight(String isHeight) {
         this.isHeight = isHeight;
+    }
+
+    public Long getCwoManualBlockOrder() {
+        return cwoManualBlockOrder;
+    }
+
+    public void setCwoManualBlockOrder(Long cwoManualBlockOrder) {
+        this.cwoManualBlockOrder = cwoManualBlockOrder;
+    }
+
+    public String getDispatchedWiInfo() {
+        return dispatchedWiInfo;
+    }
+
+    public void setDispatchedWiInfo(String dispatchedWiInfo) {
+        this.dispatchedWiInfo = dispatchedWiInfo;
     }
 }

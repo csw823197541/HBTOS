@@ -10,6 +10,7 @@ public class SmartReExchangedWiInfo {
     private Long vpcCntId; //船图箱Id
     private String vLocation; //船箱位信息
     private Long yardContainerId; //交换后新的在场箱Id
+    private String exchangeReason; //指令交换原因
 
     public Long getBerthId() {
         return berthId;
@@ -41,5 +42,13 @@ public class SmartReExchangedWiInfo {
 
     public void setYardContainerId(Long yardContainerId) {
         this.yardContainerId = yardContainerId;
+    }
+
+    public String getExchangeReason() {
+        return exchangeReason;
+    }
+
+    public void setExchangeReason(String exchangeReason) {
+        this.exchangeReason = exchangeReason;
     }
 }
