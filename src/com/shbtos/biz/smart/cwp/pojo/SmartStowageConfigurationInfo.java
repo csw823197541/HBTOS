@@ -14,6 +14,7 @@ public class SmartStowageConfigurationInfo {
     private Integer secondBoxPoint; //双箱的第二个箱子调整值：双箱的第二个箱子尽量同一箱区出箱，所以和第一个箱子同箱区的候选箱会减少罚分，默认值2000，建议参考值范围500-2000
     private Integer containerNumPoint; //双箱的第一个箱子调整值：双箱吊的第一个箱子，如果该箱区中该属性组重量等级的箱子多，则该箱区减少罚分，默认值100，建议参考值范围100-200
     private Integer underWeightDifference; //舱内允许重量差
+    private Integer aboveWeightDifference; //甲板上允许重压轻参数
     private Integer realSearchWidth; //实际搜索宽度
     private Integer realSearchDepth; //实际搜索深度
 
@@ -87,6 +88,14 @@ public class SmartStowageConfigurationInfo {
 
     public void setUnderWeightDifference(Integer underWeightDifference) {
         this.underWeightDifference = underWeightDifference;
+    }
+
+    public Integer getAboveWeightDifference() {
+        return aboveWeightDifference;
+    }
+
+    public void setAboveWeightDifference(Integer aboveWeightDifference) {
+        this.aboveWeightDifference = aboveWeightDifference;
     }
 
     public Integer getRealSearchWidth() {
