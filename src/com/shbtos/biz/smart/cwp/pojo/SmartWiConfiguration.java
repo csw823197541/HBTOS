@@ -19,7 +19,7 @@ public class SmartWiConfiguration {
     private String deckAndHatchExchange; //允许甲板上/下间交换，Y表示允许，N或null表示不允许
     private String allVesselExchange; //允许整船（舱与舱）交换，Y表示允许，N或null表示不允许
     private String emptyCntExchange; //允许空箱整船交换，如果为N或者null，依照上诉规则交换
-    private String moveOrderExchange; //是否允许交换作业顺序
+    private String moveOrderExchange; //是否允许交换作业顺序fs
     private Long deckWeightDifference; //甲板上箱子交换重量差参数
     private Long hatchWeightDifference; //舱下箱子交换重量差参数
     private Long hatchSideWeightDifference; //甲板上里外档两跟槽重量差参数
