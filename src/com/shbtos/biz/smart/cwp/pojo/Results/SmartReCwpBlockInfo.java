@@ -14,6 +14,7 @@ public class SmartReCwpBlockInfo {
     private String currentCraneBayNo;//桥机当前所在倍位
     private Long hatchId; //舱ID
     private Long planAmount; //作业块Move总数，计划作业总量
+    private double amountTemp; //计算扣除不回收的指令用
     private Double cranePosition;//桥机当前位置
     private String lduldfg; //装卸船标志
     private Long craneSeq;//作业某个舱所有桥机的作业顺序
@@ -171,5 +172,12 @@ public class SmartReCwpBlockInfo {
         this.workingEndTime = workingEndTime;
     }
 
+    public double getAmountTemp() {
+        return amountTemp;
+    }
+
+    public void setAmountTemp(double amountTemp) {
+        this.amountTemp = amountTemp;
+    }
 }
 
