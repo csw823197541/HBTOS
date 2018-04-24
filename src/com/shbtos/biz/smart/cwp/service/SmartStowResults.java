@@ -1,10 +1,7 @@
 package com.shbtos.biz.smart.cwp.service;
 
 
-import com.shbtos.biz.smart.cwp.pojo.Results.SmartReAutoStowInfo;
-import com.shbtos.biz.smart.cwp.pojo.Results.SmartReMessageInfo;
-import com.shbtos.biz.smart.cwp.pojo.Results.SmartRePreStowVesselCntWeightInfo;
-import com.shbtos.biz.smart.cwp.pojo.Results.SmartReWeightGroupInfo;
+import com.shbtos.biz.smart.cwp.pojo.Results.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +16,8 @@ public class SmartStowResults {
     private List<SmartReWeightGroupInfo> smartReWeightGroupInfoList;
     private List<SmartRePreStowVesselCntWeightInfo> smartRePreStowVesselCntWeightInfoList;
 
+    private List<SmartReAutoStowEvaluationInfo> smartReAutoStowEvaluationInfoList;
+
     private SmartReMessageInfo smartReMessageInfo;
 
     public SmartStowResults() {
@@ -26,6 +25,7 @@ public class SmartStowResults {
         smartReMessageInfo = new SmartReMessageInfo();
         smartReWeightGroupInfoList = new ArrayList<>();
         smartRePreStowVesselCntWeightInfoList = new ArrayList<>();
+        smartReAutoStowEvaluationInfoList = new ArrayList<>();
     }
 
     public List<SmartReWeightGroupInfo> getSmartReWeightGroupInfoList() {
@@ -58,5 +58,13 @@ public class SmartStowResults {
 
     public void setSmartReMessageInfo(SmartReMessageInfo smartReMessageInfo) {
         this.smartReMessageInfo = smartReMessageInfo;
+    }
+
+    public List<SmartReAutoStowEvaluationInfo> getSmartReAutoStowEvaluationInfoList() {
+        return smartReAutoStowEvaluationInfoList;
+    }
+
+    public void setSmartReAutoStowEvaluationInfoList(List<SmartReAutoStowEvaluationInfo> smartReAutoStowEvaluationInfoList) {
+        this.smartReAutoStowEvaluationInfoList = smartReAutoStowEvaluationInfoList;
     }
 }
