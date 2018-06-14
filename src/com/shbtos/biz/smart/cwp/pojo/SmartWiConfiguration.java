@@ -23,6 +23,8 @@ public class SmartWiConfiguration {
     private Long deckWeightDifference; //甲板上箱子交换重量差参数
     private Long hatchWeightDifference; //舱下箱子交换重量差参数
     private Long hatchSideWeightDifference; //甲板上里外档两跟槽重量差参数
+    private Integer deckTierNum; //甲板上发箱层高限制
+    private Integer hatchTierNum; //舱内发箱层高限制
 
     public Long getBerthId() {
         return berthId;
@@ -158,5 +160,21 @@ public class SmartWiConfiguration {
 
     public void setMoveOrderExchange(String moveOrderExchange) {
         this.moveOrderExchange = moveOrderExchange;
+    }
+
+    public Integer getDeckTierNum() {
+        return deckTierNum;
+    }
+
+    public void setDeckTierNum(Integer deckTierNum) {
+        this.deckTierNum = deckTierNum;
+    }
+
+    public Integer getHatchTierNum() {
+        return hatchTierNum;
+    }
+
+    public void setHatchTierNum(Integer hatchTierNum) {
+        this.hatchTierNum = hatchTierNum;
     }
 }
