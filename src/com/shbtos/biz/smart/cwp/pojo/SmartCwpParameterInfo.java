@@ -8,6 +8,7 @@ package com.shbtos.biz.smart.cwp.pojo;
 public class SmartCwpParameterInfo {
 
     private Long berthId; //靠泊Id
+    private String cwpNewOpen; //是否启用新CWP参数
 
     //全局参数
     private Double safeDistance; //桥机安全距离，14米
@@ -48,6 +49,14 @@ public class SmartCwpParameterInfo {
 
     public void setBerthId(Long berthId) {
         this.berthId = berthId;
+    }
+
+    public String getCwpNewOpen() {
+        return cwpNewOpen;
+    }
+
+    public void setCwpNewOpen(String cwpNewOpen) {
+        this.cwpNewOpen = cwpNewOpen;
     }
 
     public Double getSafeDistance() {
