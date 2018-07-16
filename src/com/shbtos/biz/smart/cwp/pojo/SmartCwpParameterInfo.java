@@ -11,6 +11,7 @@ public class SmartCwpParameterInfo {
     private String cwpNewOpen; //是否启用新CWP参数
 
     //全局参数
+    private Integer twinWeightDiff; //双箱吊工艺的重量差允许范围
     private Double safeDistance; //桥机安全距离，14米
     private Long crossBarTime;//桥机跨机械起趴大梁移动时间，900s
     private Double craneMoveSpeed; //桥机移动速度，0.75m/s
@@ -42,6 +43,14 @@ public class SmartCwpParameterInfo {
     private String DeckWorkLater; //避免开工作业甲板装船箱，避让时间为开工后一小时，Y/N
     private String mainRoadOneCrane; //重点路单桥吊持续作业，其余箱量由左右桥吊分配， Y/N
     private String dividedHatchFirst; //分割舱优先作业设定，Y/N
+
+    public Integer getTwinWeightDiff() {
+        return twinWeightDiff;
+    }
+
+    public void setTwinWeightDiff(Integer twinWeightDiff) {
+        this.twinWeightDiff = twinWeightDiff;
+    }
 
     public Long getBerthId() {
         return berthId;
