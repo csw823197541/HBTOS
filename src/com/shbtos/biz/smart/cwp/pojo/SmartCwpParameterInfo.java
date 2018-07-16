@@ -38,7 +38,7 @@ public class SmartCwpParameterInfo {
     private Integer craneAdviceNumber;//建议开路数
 
     //单船CWP决策参数
-    private String loadPrior; //船舶开路装卸平衡考虑参数。首次开路全装、首次开路全卸、首次开路装卸错开:"LOAD"、"DISC"、"LOAD_DISC"
+    private String loadPrior; //船舶开路装卸平衡考虑参数。首次开路全装、首次开路全卸、首次开路装卸错开:"L"、"D"、"LD"
     private String craneSameWorkTime; //均衡每部桥吊的作业量，整船桥吊同时完工，Y/N
     private String DeckWorkLater; //避免开工作业甲板装船箱，避让时间为开工后一小时，Y/N
     private String mainRoadOneCrane; //重点路单桥吊持续作业，其余箱量由左右桥吊分配， Y/N
