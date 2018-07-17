@@ -6,7 +6,7 @@ import java.util.Date;
  * Created by csw on 2018/7/16.
  * Description:
  */
-public class SmartReCwpCraneInfo {
+public class SmartReCwpCraneEfficiencyInfo {
 
     private Long berthId; //靠泊Id
     private String craneNo; //桥机号

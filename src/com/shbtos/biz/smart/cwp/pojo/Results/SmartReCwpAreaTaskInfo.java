@@ -6,7 +6,7 @@ import java.util.Date;
  * Created by csw on 2018/7/16.
  * Description:
  */
-public class SmartReCwpAreaInfo {
+public class SmartReCwpAreaTaskInfo {
 
     private String areaNo; //箱区号
     private Date startTime; //开始时间
