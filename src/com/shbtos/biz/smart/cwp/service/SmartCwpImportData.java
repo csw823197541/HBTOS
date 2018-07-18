@@ -43,6 +43,7 @@ public class SmartCwpImportData {
     private List<SmartCraneAddOrDelInfo> smartCraneAddOrDelInfoList;
     private List<SmartCwpWorkBlockInfo> smartCwpWorkBlockInfoList;
     private List<SmartCwpParameterInfo> smartCwpParameterInfoList;
+    private List<SmartCraneFirstWorkInfo> smartCraneFirstWorkInfoList;
 
     public SmartCwpImportData(){
         this.smartAdviseConfigureInfoList = new ArrayList<>();
@@ -75,6 +76,7 @@ public class SmartCwpImportData {
         this.smartCraneAddOrDelInfoList = new ArrayList<>();
         this.smartCwpWorkBlockInfoList = new ArrayList<>();
         this.smartCwpParameterInfoList = new ArrayList<>();
+        this.smartCraneFirstWorkInfoList = new ArrayList<>();
     }
 
     public List<SmartCwpParameterInfo> getSmartCwpParameterInfoList() {
@@ -315,5 +317,13 @@ public class SmartCwpImportData {
 
     public void setSmartCwpWorkBlockInfoList(List<SmartCwpWorkBlockInfo> smartCwpWorkBlockInfoList) {
         this.smartCwpWorkBlockInfoList = smartCwpWorkBlockInfoList;
+    }
+
+    public List<SmartCraneFirstWorkInfo> getSmartCraneFirstWorkInfoList() {
+        return smartCraneFirstWorkInfoList;
+    }
+
+    public void setSmartCraneFirstWorkInfoList(List<SmartCraneFirstWorkInfo> smartCraneFirstWorkInfoList) {
+        this.smartCraneFirstWorkInfoList = smartCraneFirstWorkInfoList;
     }
 }

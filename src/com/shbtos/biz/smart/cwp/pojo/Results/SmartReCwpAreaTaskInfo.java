@@ -8,12 +8,21 @@ import java.util.Date;
  */
 public class SmartReCwpAreaTaskInfo {
 
+    private String craneNo; //桥机号
     private String areaNo; //箱区号
     private Date startTime; //开始时间
     private Date endTime; //结束时间
     private Long groupId; //属性组Id;
     private Integer planCntNumber; //箱区计划出箱量
     private Integer cntOverNumber; //箱区计划翻箱量
+
+    public String getCraneNo() {
+        return craneNo;
+    }
+
+    public void setCraneNo(String craneNo) {
+        this.craneNo = craneNo;
+    }
 
     public String getAreaNo() {
         return areaNo;

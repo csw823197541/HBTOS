@@ -11,8 +11,7 @@ public class SmartCranePoolInfo {
     private String craneNo;//桥吊ID
     private Date workStartTime;//作业开始时间
     private Date workEndTime;//作业结束时间
-    private String bayNo; //桥机选择作业的倍位
-    private Long planAmount; //桥机选择作业倍位的作业量
+
 
     public Long getPoolId() {
         return poolId;
@@ -46,19 +45,4 @@ public class SmartCranePoolInfo {
         this.workEndTime = workEndTime;
     }
 
-    public String getBayNo() {
-        return bayNo;
-    }
-
-    public void setBayNo(String bayNo) {
-        this.bayNo = bayNo;
-    }
-
-    public Long getPlanAmount() {
-        return planAmount;
-    }
-
-    public void setPlanAmount(Long planAmount) {
-        this.planAmount = planAmount;
-    }
 }

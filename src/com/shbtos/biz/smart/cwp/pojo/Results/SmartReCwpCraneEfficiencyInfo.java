@@ -14,6 +14,10 @@ public class SmartReCwpCraneEfficiencyInfo {
     private Date endTime; //结束时间
     private Integer discCntNumber; //卸船箱量
     private Integer loadCntNumber; //装船箱量
+    private Double planWorkTime; //桥机计划作业时间，小时
+    private Double planWorkEfficiency; //计划作业效率，关/小时
+    private Integer dangerCntNumber; //桥机作业危险品的箱量
+    private Integer overLimitCntNumber; //桥机作业超限箱箱量，超限箱定义箱型为OT,FR，超限代码为OW,OH,OL,O
 
     public Long getBerthId() {
         return berthId;
@@ -61,5 +65,37 @@ public class SmartReCwpCraneEfficiencyInfo {
 
     public void setLoadCntNumber(Integer loadCntNumber) {
         this.loadCntNumber = loadCntNumber;
+    }
+
+    public Double getPlanWorkTime() {
+        return planWorkTime;
+    }
+
+    public void setPlanWorkTime(Double planWorkTime) {
+        this.planWorkTime = planWorkTime;
+    }
+
+    public Double getPlanWorkEfficiency() {
+        return planWorkEfficiency;
+    }
+
+    public void setPlanWorkEfficiency(Double planWorkEfficiency) {
+        this.planWorkEfficiency = planWorkEfficiency;
+    }
+
+    public Integer getDangerCntNumber() {
+        return dangerCntNumber;
+    }
+
+    public void setDangerCntNumber(Integer dangerCntNumber) {
+        this.dangerCntNumber = dangerCntNumber;
+    }
+
+    public Integer getOverLimitCntNumber() {
+        return overLimitCntNumber;
+    }
+
+    public void setOverLimitCntNumber(Integer overLimitCntNumber) {
+        this.overLimitCntNumber = overLimitCntNumber;
     }
 }
