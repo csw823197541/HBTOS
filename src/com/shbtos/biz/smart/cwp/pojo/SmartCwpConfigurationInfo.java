@@ -41,6 +41,8 @@ public class SmartCwpConfigurationInfo {
 
     private Integer loadFirstParam; //装船优先开路参数，该参数控制尽量先开装船的倍位，默认参数是2(可以调成更大)：桥机开路会尽量装卸错开开路；当参数调成0是：不进行装船优先考虑
 
+    private String recycleCntWiFlag; //回收指令标记，控制是否回收队列中的指令，Y表示回收，N表示不回收
+
     public Integer getLoadFirstParam() {
         return loadFirstParam;
     }
@@ -231,5 +233,13 @@ public class SmartCwpConfigurationInfo {
 
     public void setKeepSelectedBayWorkTime(Long keepSelectedBayWorkTime) {
         this.keepSelectedBayWorkTime = keepSelectedBayWorkTime;
+    }
+
+    public String getRecycleCntWiFlag() {
+        return recycleCntWiFlag;
+    }
+
+    public void setRecycleCntWiFlag(String recycleCntWiFlag) {
+        this.recycleCntWiFlag = recycleCntWiFlag;
     }
 }
