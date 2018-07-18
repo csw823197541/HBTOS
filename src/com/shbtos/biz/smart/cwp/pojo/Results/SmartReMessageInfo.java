@@ -98,7 +98,7 @@ public class SmartReMessageInfo {
     }
 
     public void putExecuteLog(Long berthId, String info) {
-        if (info != null) {
+        if (info != null && !"".equals(info.trim())) {
             if (executeLogMap.get(berthId) == null) {
                 executeLogMap.put(berthId, new StringBuffer());
             }
@@ -107,7 +107,7 @@ public class SmartReMessageInfo {
     }
 
     public void putErrorLog(Long berthId, String info) {
-        if (info != null) {
+        if (info != null && !"".equals(info.trim())) {
             if (errorLogMap.get(berthId) == null) {
                 errorLogMap.put(berthId, new StringBuffer());
             }
