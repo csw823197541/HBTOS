@@ -10,6 +10,7 @@ public class SmartReCwpCraneEfficiencyInfo {
 
     private Long berthId; //靠泊Id
     private String craneNo; //桥机号
+    private String dlType; //装、卸类型
     private Date startTime; //开始时间
     private Date endTime; //结束时间
     private Integer discCntNumber; //卸船箱量
@@ -97,5 +98,13 @@ public class SmartReCwpCraneEfficiencyInfo {
 
     public void setOverLimitCntNumber(Integer overLimitCntNumber) {
         this.overLimitCntNumber = overLimitCntNumber;
+    }
+
+    public String getDlType() {
+        return dlType;
+    }
+
+    public void setDlType(String dlType) {
+        this.dlType = dlType;
     }
 }

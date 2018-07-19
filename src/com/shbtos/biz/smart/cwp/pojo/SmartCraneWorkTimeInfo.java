@@ -7,9 +7,11 @@ import java.util.Date;
  * 可以安排桥吊的作业时间
  */
 public class SmartCraneWorkTimeInfo {
-    private String craneNo;//桥吊号
-    private Date workStartTime;//作业开始时间
-    private Date workEndTime;//作业结束时间
+
+    private String craneNo; //桥吊号
+    private Long berthId; //作业船舶，靠泊Id
+    private Date workStartTime; //作业开始时间
+    private Date workEndTime; //作业结束时间
 
     public String getCraneNo() {
         return craneNo;
@@ -17,6 +19,14 @@ public class SmartCraneWorkTimeInfo {
 
     public void setCraneNo(String craneNo) {
         this.craneNo = craneNo;
+    }
+
+    public Long getBerthId() {
+        return berthId;
+    }
+
+    public void setBerthId(Long berthId) {
+        this.berthId = berthId;
     }
 
     public Date getWorkStartTime() {
