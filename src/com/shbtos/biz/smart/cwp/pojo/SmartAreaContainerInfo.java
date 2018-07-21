@@ -6,14 +6,14 @@ package com.shbtos.biz.smart.cwp.pojo;
  */
 public class SmartAreaContainerInfo {
 
-    private Long berthId;         //靠泊ID
-    private Long groupId;       //属性组
-    private Long weightId;	//重量等级ID
-    private String areaNo;       //箱区号
-    private String areaType;       //箱区类型
-    private Long totalNumber;      //总数
-    private Long canStowNumber;   //可配数量
-    private Long canNotStowNumber;//不可配数量
+    private Long berthId; //靠泊ID
+    private Long groupId; //属性组
+    private Long weightId; //重量等级ID
+    private String areaNo; //箱区号
+    private String areaType; //箱区类型
+    private Long totalNumber; //总数
+    private Long canStowNumber; //可配数量
+    private Long canNotStowNumber; //不可配数量
 
 
     public Long getBerthId() {
