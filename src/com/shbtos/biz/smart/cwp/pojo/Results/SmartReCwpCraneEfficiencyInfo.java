@@ -15,10 +15,19 @@ public class SmartReCwpCraneEfficiencyInfo {
     private Date endTime; //结束时间
     private Integer discCntNumber; //卸船箱量
     private Integer loadCntNumber; //装船箱量
+    private Integer planWorkCntNumber; //桥机计划作业箱量
     private Double planWorkTime; //桥机计划作业时间，小时
     private Double planWorkEfficiency; //计划作业效率，关/小时
     private Integer dangerCntNumber; //桥机作业危险品的箱量
     private Integer overLimitCntNumber; //桥机作业超限箱箱量，超限箱定义箱型为OT,FR，超限代码为OW,OH,OL,O
+
+    public Integer getPlanWorkCntNumber() {
+        return planWorkCntNumber;
+    }
+
+    public void setPlanWorkCntNumber(Integer planWorkCntNumber) {
+        this.planWorkCntNumber = planWorkCntNumber;
+    }
 
     public Long getBerthId() {
         return berthId;
