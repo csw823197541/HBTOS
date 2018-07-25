@@ -28,6 +28,15 @@ public class SmartReCwpBlockInfo {
     private String blockMessage; //作业块信息，主要是当作业量与实际指令数目不符合的时候，给出提示信息
     private String lockFlag; //是否被锁住标记，时间往后安排，Y表示锁住；N或者null表示正常执行的指令
     private String selectReason; //桥机选择倍位作业的原因
+    private String blockType; //作业块类型，"HC"表示舱盖板作业块；"CNT"表示集装箱作业块
+
+    public String getBlockType() {
+        return blockType;
+    }
+
+    public void setBlockType(String blockType) {
+        this.blockType = blockType;
+    }
 
     public String getLockFlag() {
         return lockFlag;
