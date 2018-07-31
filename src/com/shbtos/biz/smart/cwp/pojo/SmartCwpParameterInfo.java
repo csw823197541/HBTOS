@@ -28,6 +28,7 @@ public class SmartCwpParameterInfo {
     private Long specialCntTime; //超限箱、分体大件作业用时，360s
     private Long dangerCntTime; //直装直提危险品作业用时，360s
     private Long badCntTime; //故障箱处理用时，360s
+    private Long hatchScanTime; //桥机换倍船扫时间，300s
     private Double impactFactor; //特殊因素影响效率的影响因子，1.0
 
     //单船功能参数
@@ -42,6 +43,14 @@ public class SmartCwpParameterInfo {
     private String deckWorkLater; //避免开工作业甲板装船箱，避让时间为开工后一小时，Y/N
     private String mainRoadOneCrane; //重点路单桥吊持续作业，其余箱量由左右桥吊分配， Y/N
     private String dividedHatchFirst; //分割舱优先作业设定，Y/N
+
+    public Long getHatchScanTime() {
+        return hatchScanTime;
+    }
+
+    public void setHatchScanTime(Long hatchScanTime) {
+        this.hatchScanTime = hatchScanTime;
+    }
 
     public Integer getTwinWeightDiff() {
         return twinWeightDiff;
