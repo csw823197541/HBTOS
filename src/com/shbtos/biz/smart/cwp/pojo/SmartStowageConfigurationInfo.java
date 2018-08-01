@@ -17,6 +17,33 @@ public class SmartStowageConfigurationInfo {
     private Integer aboveWeightDifference; //甲板上允许重压轻参数
     private Integer realSearchWidth; //实际搜索宽度
     private Integer realSearchDepth; //实际搜索深度
+    private Integer aboveTier; //甲板上配重箱的层数，0表示不需要，1-10代表有多少层需要配重箱，默认是1
+    private Integer hatchTail; //从这个倍位号开始都配轻箱，大倍位号2、6，默认不需要考虑此参数时，设置超过船舶最大倍位号
+    private String underDeckPriority; //尾舱划分轻的情况下，对应这几个舱的甲板下是否划重箱
+
+    public Integer getAboveTier() {
+        return aboveTier;
+    }
+
+    public void setAboveTier(Integer aboveTier) {
+        this.aboveTier = aboveTier;
+    }
+
+    public Integer getHatchTail() {
+        return hatchTail;
+    }
+
+    public void setHatchTail(Integer hatchTail) {
+        this.hatchTail = hatchTail;
+    }
+
+    public String getUnderDeckPriority() {
+        return underDeckPriority;
+    }
+
+    public void setUnderDeckPriority(String underDeckPriority) {
+        this.underDeckPriority = underDeckPriority;
+    }
 
     public Long getBerthId() {
         return berthId;
