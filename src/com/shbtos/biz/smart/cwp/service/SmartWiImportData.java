@@ -28,7 +28,7 @@ public class SmartWiImportData {
     /**
      * 桥吊的作业时间
      */
-    private List<SmartCraneWorkTimeInfo> smartCraneWorkTimeInfoList;
+    private List<SmartCraneWorkPlanInfo> smartCraneWorkPlanInfoList;
     /**
      * 桥吊基础信息
      */
@@ -138,14 +138,14 @@ public class SmartWiImportData {
         this.smartCraneWorkStartTmInfoList = smartCraneWorkStartTmInfoList;
     }
 
-    public List<SmartCraneWorkTimeInfo> getSmartCraneWorkTimeInfoList() {
-        if (smartCraneWorkTimeInfoList == null)
-            smartCraneWorkTimeInfoList = new ArrayList<>();
-        return smartCraneWorkTimeInfoList;
+    public List<SmartCraneWorkPlanInfo> getSmartCraneWorkPlanInfoList() {
+        if (smartCraneWorkPlanInfoList == null)
+            smartCraneWorkPlanInfoList = new ArrayList<>();
+        return smartCraneWorkPlanInfoList;
     }
 
-    public void setSmartCraneWorkTimeInfoList(List<SmartCraneWorkTimeInfo> smartCraneWorkTimeInfoList) {
-        this.smartCraneWorkTimeInfoList = smartCraneWorkTimeInfoList;
+    public void setSmartCraneWorkPlanInfoList(List<SmartCraneWorkPlanInfo> smartCraneWorkPlanInfoList) {
+        this.smartCraneWorkPlanInfoList = smartCraneWorkPlanInfoList;
     }
 
     public List<SmartCraneBaseInfo> getSmartCraneBaseInfoList() {

@@ -10,7 +10,7 @@ public class SmartCraneAddOrDelInfo {
 
     private Long berthId; //靠泊Id
     private Long poolId; //桥机池Id
-    private String addOrDelFlag; //加/减桥机:"ADD_CRANE"表示增加桥机，"DELETE_CRANE"表示减桥机
+    private String addOrDelFlag; //加/减桥机:"A"表示增加桥机，"D"表示减桥机
     private Date addOrDelDate; //加/减桥机的时间
     private Integer leftCraneNum; //左边桥机数
     private Integer rightCraneNum; //右边桥机数

@@ -17,6 +17,15 @@ public class SmartScheduleIdInfo {
     private String planBerthDirect;//靠泊方向,R:反向，L:正向
     private String maintainCwp;//保留当前CWP不做更改，用于刚开工的时候部分桥吊作业和部分桥吊辅助作业，用于全船 ***
     private Boolean sendWorkInstruction;//是否发送该船指令标记
+    private String doCwpFlag; //执行多船CWP算法，标记是否执行详细CWP算法，Y表示执行单船算法
+
+    public String getDoCwpFlag() {
+        return doCwpFlag;
+    }
+
+    public void setDoCwpFlag(String doCwpFlag) {
+        this.doCwpFlag = doCwpFlag;
+    }
 
     public Boolean getSendWorkInstruction() {
         return sendWorkInstruction;

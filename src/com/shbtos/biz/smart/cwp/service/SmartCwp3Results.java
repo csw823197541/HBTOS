@@ -1,9 +1,8 @@
 package com.shbtos.biz.smart.cwp.service;
 
 
-import com.shbtos.biz.smart.cwp.pojo.Results.SmartReCwpBlockInfo;
+import com.shbtos.biz.smart.cwp.pojo.Results.SmartReCraneWorkPlanInfo;
 import com.shbtos.biz.smart.cwp.pojo.Results.SmartReCwpModalInfo;
-import com.shbtos.biz.smart.cwp.pojo.Results.SmartReCwpWorkOrderInfo;
 import com.shbtos.biz.smart.cwp.pojo.Results.SmartReMessageInfo;
 
 import java.util.ArrayList;
@@ -17,10 +16,20 @@ public class SmartCwp3Results {
 
     private SmartReMessageInfo smartReMessageInfo;
     private List<SmartReCwpModalInfo> smartReCwpModalInfoList;
+    private List<SmartReCraneWorkPlanInfo> smartReCraneWorkPlanInfoList;
 
     public SmartCwp3Results() {
         this.smartReMessageInfo = new SmartReMessageInfo();
         smartReCwpModalInfoList = new ArrayList<>();
+        smartReCraneWorkPlanInfoList = new ArrayList<>();
+    }
+
+    public List<SmartReCraneWorkPlanInfo> getSmartReCraneWorkPlanInfoList() {
+        return smartReCraneWorkPlanInfoList;
+    }
+
+    public void setSmartReCraneWorkPlanInfoList(List<SmartReCraneWorkPlanInfo> smartReCraneWorkPlanInfoList) {
+        this.smartReCraneWorkPlanInfoList = smartReCraneWorkPlanInfoList;
     }
 
     public SmartReMessageInfo getSmartReMessageInfo() {
