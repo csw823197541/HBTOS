@@ -44,6 +44,15 @@ public class SmartCwpParameterInfo {
     private String mainRoadOneCrane; //重点路单桥吊持续作业，其余箱量由左右桥吊分配， Y/N
     private String dividedHatchFirst; //分割舱优先作业设定，Y/N
     private String craneNotSameWorkTime; //桥机作业量不平均（桥机作业范围按驾驶台/烟囱划分，分割舱最少），Y/N
+    private String splitRoad; //劈路原则，Y/N
+
+    public String getSplitRoad() {
+        return splitRoad;
+    }
+
+    public void setSplitRoad(String splitRoad) {
+        this.splitRoad = splitRoad;
+    }
 
     public String getCraneNotSameWorkTime() {
         return craneNotSameWorkTime;
