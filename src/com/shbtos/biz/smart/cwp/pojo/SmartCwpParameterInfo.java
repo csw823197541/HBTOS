@@ -42,9 +42,9 @@ public class SmartCwpParameterInfo {
     private String craneSameWorkTime; //均衡每部桥吊的作业量，整船桥吊同时完工，Y/N
     private String deckWorkLater; //避免开工作业甲板装船箱，避让时间为开工后一小时，Y/N
     private String mainRoadOneCrane; //重点路单桥吊持续作业，其余箱量由左右桥吊分配， Y/N
-    private String dividedHatchFirst; //分割舱优先作业设定，Y/N
+    private String dividedHatchFirst; //分割舱优先作业设定，Y/N，默认是N
     private String craneNotSameWorkTime; //桥机作业量不平均（桥机作业范围按驾驶台/烟囱划分，分割舱最少），Y/N
-    private String splitRoad; //劈路原则，Y/N
+    private String splitRoad; //劈路原则，Y/N，默认是Y
 
     public String getSplitRoad() {
         return splitRoad;
