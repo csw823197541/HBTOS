@@ -20,6 +20,24 @@ public class SmartStowageConfigurationInfo {
     private Integer aboveTier; //甲板上配重箱的层数，0表示不需要，1-10代表有多少层需要配重箱，默认是1
     private Integer hatchTail; //从这个倍位号开始都配轻箱，大倍位号2、6，默认不需要考虑此参数时，设置超过船舶最大倍位号：1000
     private Boolean underDeckPriority; //尾舱划分轻的情况下，对应这几个舱的甲板下是否划重箱，默认为false
+    private Integer restowCntrTime; //翻一个箱子的倒箱时间
+    private Integer ascWorkCntrTime; //Asc作业一个箱子的时间
+
+    public Integer getRestowCntrTime() {
+        return restowCntrTime;
+    }
+
+    public void setRestowCntrTime(Integer restowCntrTime) {
+        this.restowCntrTime = restowCntrTime;
+    }
+
+    public Integer getAscWorkCntrTime() {
+        return ascWorkCntrTime;
+    }
+
+    public void setAscWorkCntrTime(Integer ascWorkCntrTime) {
+        this.ascWorkCntrTime = ascWorkCntrTime;
+    }
 
     public Integer getAboveTier() {
         return aboveTier;
