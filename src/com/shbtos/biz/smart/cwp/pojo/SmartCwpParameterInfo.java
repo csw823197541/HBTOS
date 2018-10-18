@@ -36,6 +36,7 @@ public class SmartCwpParameterInfo {
     private Boolean setupChimney;//是否果烟囱
     private String ldStrategy;//装卸策略，即边装边卸：BLD、一般装卸：LD，默认驳船不做边装边卸，大船能做边装边卸就做
     private Integer craneAdviceNumber;//建议开路数
+    private String recycleCntWiFlag; //回收指令标记，控制是否回收队列中的指令，Y表示回收，N表示不回收
 
     //单船CWP决策参数
     private String loadPrior; //船舶开路装卸平衡考虑参数。首次开路全装、首次开路全卸、首次开路装卸错开:"L"、"D"、"LD"
@@ -45,6 +46,14 @@ public class SmartCwpParameterInfo {
     private String dividedHatchFirst; //分割舱优先作业设定，Y/N，默认是N
     private String craneNotSameWorkTime; //桥机作业量不平均（桥机作业范围按驾驶台/烟囱划分，分割舱最少），Y/N
     private String splitRoad; //劈路原则，Y/N，默认是Y
+
+    public String getRecycleCntWiFlag() {
+        return recycleCntWiFlag;
+    }
+
+    public void setRecycleCntWiFlag(String recycleCntWiFlag) {
+        this.recycleCntWiFlag = recycleCntWiFlag;
+    }
 
     public String getSplitRoad() {
         return splitRoad;
