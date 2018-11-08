@@ -11,12 +11,12 @@ import java.util.List;
  * Created by liuminhang on 2017/2/9.
  * 用于存储CWP运算结果
  */
-public class SmartCraneResourceResults {
+public class SmartCraneAllocationResults {
 
     private SmartReMessageInfo smartReMessageInfo;
     private List<SmartReCraneWorkPlanInfo> smartReCraneWorkPlanInfoList;
 
-    public SmartCraneResourceResults() {
+    public SmartCraneAllocationResults() {
         this.smartReMessageInfo = new SmartReMessageInfo();
         smartReCraneWorkPlanInfoList = new ArrayList<>();
     }
