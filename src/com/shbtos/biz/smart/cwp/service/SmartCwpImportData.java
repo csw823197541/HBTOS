@@ -47,6 +47,7 @@ public class SmartCwpImportData {
     private List<SmartCraneManualInfo> smartCraneManualInfoList;
     private List<SmartCraneWorkPlanInfo> smartCraneWorkPlanInfoList;
     private List<SmartVesselContainerAmountInfo> smartVesselContainerAmountInfoList;
+    private List<SmartBarWorkPlanInfo> smartBarWorkPlanInfoList;
 
     public SmartCwpImportData(){
         this.smartAdviseConfigureInfoList = new ArrayList<>();
@@ -82,6 +83,15 @@ public class SmartCwpImportData {
         this.smartCraneFirstWorkInfoList = new ArrayList<>();
         this.smartCraneManualInfoList = new ArrayList<>();
         smartVesselContainerAmountInfoList = new ArrayList<>();
+        smartBarWorkPlanInfoList = new ArrayList<>();
+    }
+
+    public List<SmartBarWorkPlanInfo> getSmartBarWorkPlanInfoList() {
+        return smartBarWorkPlanInfoList;
+    }
+
+    public void setSmartBarWorkPlanInfoList(List<SmartBarWorkPlanInfo> smartBarWorkPlanInfoList) {
+        this.smartBarWorkPlanInfoList = smartBarWorkPlanInfoList;
     }
 
     public List<SmartVesselContainerAmountInfo> getSmartVesselContainerAmountInfoList() {
