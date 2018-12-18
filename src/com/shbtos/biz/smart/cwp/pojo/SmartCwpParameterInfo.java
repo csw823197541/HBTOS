@@ -15,6 +15,7 @@ public class SmartCwpParameterInfo {
     private Long crossBarTime;//桥机跨机械起趴大梁移动时间，900s
     private Double craneMoveSpeed; //桥机移动速度，0.75m/s
     private Long unlockTwistTime; //甲板上拆锁时间，甲板五层高及以上集装箱拆锁用时，90s
+
     private Long hatchCoverTime; //桥机作业单块舱盖板时间，240s
     private Long single20Time; //单20尺普通箱作业用时，120s
     private Long single20FootPadTime; //单20尺垫脚箱作业用时，180s
