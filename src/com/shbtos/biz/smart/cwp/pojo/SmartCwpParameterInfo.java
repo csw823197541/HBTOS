@@ -16,18 +16,29 @@ public class SmartCwpParameterInfo {
     private Double craneMoveSpeed; //桥机移动速度，0.75m/s
     private Long unlockTwistTime; //甲板上拆锁时间，甲板五层高及以上集装箱拆锁用时，90s
 
-    private Long hatchCoverTime; //桥机作业单块舱盖板时间，240s
-    private Long single20Time; //单20尺普通箱作业用时，120s
-    private Long single20FootPadTime; //单20尺垫脚箱作业用时，180s
-    private Long single20SeparateTime; //单20尺全隔槽作业用时，180s
-    private Long single20HalfSeparateTime; //单20尺半隔槽作业用时，180s
-    private Long single40Time; //单40尺普通箱作业用时，120s
-    private Long single45Time; //单45尺普通箱作业用时，120s
-    private Long double20Time; //双20尺普通箱作业用时，150s
-    private Long double40Time; //双吊具40尺作业用时，140s
-    private Long double45Time; //双吊具45尺作业用时，140s
-    private Long specialCntTime; //超限箱、分体大件作业用时，360s
-    private Long dangerCntTime; //直装直提危险品作业用时，360s
+//    private Long hatchCoverTime; //桥机作业单块舱盖板时间，240s
+//    private Long single20Time; //单20尺普通箱作业用时，120s
+//    private Long single20FootPadTime; //单20尺垫脚箱作业用时，180s
+//    private Long single20SeparateTime; //单20尺全隔槽作业用时，180s
+//    private Long single20HalfSeparateTime; //单20尺半隔槽作业用时，180s
+//    private Long single40Time; //单40尺普通箱作业用时，120s
+//    private Long single45Time; //单45尺普通箱作业用时，120s
+//    private Long double20Time; //双20尺普通箱作业用时，150s
+//    private Long double40Time; //双吊具40尺作业用时，140s
+//    private Long double45Time; //双吊具45尺作业用时，140s
+//    private Long specialCntTime; //超限箱、分体大件作业用时，360s
+    private String hatchCoverTime; //桥机作业单块舱盖板时间，240s
+    private String single20Time; //单20尺普通箱作业用时，120s
+    private String single20FootPadTime; //单20尺垫脚箱作业用时，180s
+    private String single20SeparateTime; //单20尺全隔槽作业用时，180s
+    private String single20HalfSeparateTime; //单20尺半隔槽作业用时，180s
+    private String single40Time; //单40尺普通箱作业用时，120s
+    private String single45Time; //单45尺普通箱作业用时，120s
+    private String double20Time; //双20尺普通箱作业用时，150s
+    private String double40Time; //双吊具40尺作业用时，140s
+    private String double45Time; //双吊具45尺作业用时，140s
+    private String specialCntTime; //超限箱、分体大件作业用时，360s
+    private String dangerCntTime; //直装直提危险品作业用时，360s
     private Long badCntTime; //故障箱处理用时，360s
     private Long hatchScanTime; //桥机换倍船扫时间，300s
     private Double impactFactor; //特殊因素影响效率的影响因子，1.0
@@ -137,99 +148,99 @@ public class SmartCwpParameterInfo {
         this.unlockTwistTime = unlockTwistTime;
     }
 
-    public Long getHatchCoverTime() {
+    public String getHatchCoverTime() {
         return hatchCoverTime;
     }
 
-    public void setHatchCoverTime(Long hatchCoverTime) {
+    public void setHatchCoverTime(String hatchCoverTime) {
         this.hatchCoverTime = hatchCoverTime;
     }
 
-    public Long getSingle20Time() {
+    public String getSingle20Time() {
         return single20Time;
     }
 
-    public void setSingle20Time(Long single20Time) {
+    public void setSingle20Time(String single20Time) {
         this.single20Time = single20Time;
     }
 
-    public Long getSingle20FootPadTime() {
+    public String getSingle20FootPadTime() {
         return single20FootPadTime;
     }
 
-    public void setSingle20FootPadTime(Long single20FootPadTime) {
+    public void setSingle20FootPadTime(String single20FootPadTime) {
         this.single20FootPadTime = single20FootPadTime;
     }
 
-    public Long getSingle20SeparateTime() {
+    public String getSingle20SeparateTime() {
         return single20SeparateTime;
     }
 
-    public void setSingle20SeparateTime(Long single20SeparateTime) {
+    public void setSingle20SeparateTime(String single20SeparateTime) {
         this.single20SeparateTime = single20SeparateTime;
     }
 
-    public Long getSingle20HalfSeparateTime() {
+    public String getSingle20HalfSeparateTime() {
         return single20HalfSeparateTime;
     }
 
-    public void setSingle20HalfSeparateTime(Long single20HalfSeparateTime) {
+    public void setSingle20HalfSeparateTime(String single20HalfSeparateTime) {
         this.single20HalfSeparateTime = single20HalfSeparateTime;
     }
 
-    public Long getSingle40Time() {
+    public String getSingle40Time() {
         return single40Time;
     }
 
-    public void setSingle40Time(Long single40Time) {
+    public void setSingle40Time(String single40Time) {
         this.single40Time = single40Time;
     }
 
-    public Long getSingle45Time() {
+    public String getSingle45Time() {
         return single45Time;
     }
 
-    public void setSingle45Time(Long single45Time) {
+    public void setSingle45Time(String single45Time) {
         this.single45Time = single45Time;
     }
 
-    public Long getDouble20Time() {
+    public String getDouble20Time() {
         return double20Time;
     }
 
-    public void setDouble20Time(Long double20Time) {
+    public void setDouble20Time(String double20Time) {
         this.double20Time = double20Time;
     }
 
-    public Long getDouble40Time() {
+    public String getDouble40Time() {
         return double40Time;
     }
 
-    public void setDouble40Time(Long double40Time) {
+    public void setDouble40Time(String double40Time) {
         this.double40Time = double40Time;
     }
 
-    public Long getDouble45Time() {
+    public String getDouble45Time() {
         return double45Time;
     }
 
-    public void setDouble45Time(Long double45Time) {
+    public void setDouble45Time(String double45Time) {
         this.double45Time = double45Time;
     }
 
-    public Long getSpecialCntTime() {
+    public String getSpecialCntTime() {
         return specialCntTime;
     }
 
-    public void setSpecialCntTime(Long specialCntTime) {
+    public void setSpecialCntTime(String specialCntTime) {
         this.specialCntTime = specialCntTime;
     }
 
-    public Long getDangerCntTime() {
+    public String getDangerCntTime() {
         return dangerCntTime;
     }
 
-    public void setDangerCntTime(Long dangerCntTime) {
+    public void setDangerCntTime(String dangerCntTime) {
         this.dangerCntTime = dangerCntTime;
     }
 
