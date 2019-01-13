@@ -25,6 +25,8 @@ public class SmartWiConfiguration {
     private Long hatchSideWeightDifference; //甲板上里外档两跟槽重量差参数
     private Integer deckTierNum; //甲板上发箱层高限制
     private Integer hatchTierNum; //舱内发箱层高限制
+    private Integer sendContainerNum; // 任意多少分钟发送多少个箱子，发箱数目
+    private Integer sendIntervalTime; // 任意多少分钟发送多少个箱子，时间参数
 
     public Long getBerthId() {
         return berthId;
@@ -176,5 +178,21 @@ public class SmartWiConfiguration {
 
     public void setHatchTierNum(Integer hatchTierNum) {
         this.hatchTierNum = hatchTierNum;
+    }
+
+    public Integer getSendContainerNum() {
+        return sendContainerNum;
+    }
+
+    public void setSendContainerNum(Integer sendContainerNum) {
+        this.sendContainerNum = sendContainerNum;
+    }
+
+    public Integer getSendIntervalTime() {
+        return sendIntervalTime;
+    }
+
+    public void setSendIntervalTime(Integer sendIntervalTime) {
+        this.sendIntervalTime = sendIntervalTime;
     }
 }
