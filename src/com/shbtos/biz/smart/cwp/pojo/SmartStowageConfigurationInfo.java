@@ -22,6 +22,7 @@ public class SmartStowageConfigurationInfo {
     private Boolean underDeckPriority; //尾舱划分轻的情况下，对应这几个舱的甲板下是否划重箱，默认为false
     private Integer restowCntrTime; //翻一个箱子的倒箱时间
     private Integer ascWorkCntrTime; //Asc作业一个箱子的时间
+    private String twinWeightIdDifference;//双箱吊两个箱子的重量等级差值，默认是0：表示同一等级；1表示相差1个等级；2表示相差2个等级
 
     public Integer getRestowCntrTime() {
         return restowCntrTime;
@@ -157,5 +158,13 @@ public class SmartStowageConfigurationInfo {
 
     public void setRealSearchDepth(Integer realSearchDepth) {
         this.realSearchDepth = realSearchDepth;
+    }
+
+    public String getTwinWeightIdDifference() {
+        return twinWeightIdDifference;
+    }
+
+    public void setTwinWeightIdDifference(String twinWeightIdDifference) {
+        this.twinWeightIdDifference = twinWeightIdDifference;
     }
 }
