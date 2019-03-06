@@ -27,6 +27,7 @@ public class SmartWiConfiguration {
     private Integer hatchTierNum; //舱内发箱层高限制
     private Integer sendContainerNum; // 任意多少分钟发送多少个箱子，发箱数目
     private Long sendIntervalTime; // 任意多少分钟发送多少个箱子，时间参数，单位分钟
+    private Integer internalCardNumber; // 内集卡数量，均衡轨内发箱数量
 
     public Long getBerthId() {
         return berthId;
@@ -194,5 +195,13 @@ public class SmartWiConfiguration {
 
     public void setSendIntervalTime(Long sendIntervalTime) {
         this.sendIntervalTime = sendIntervalTime;
+    }
+
+    public Integer getInternalCardNumber() {
+        return internalCardNumber;
+    }
+
+    public void setInternalCardNumber(Integer internalCardNumber) {
+        this.internalCardNumber = internalCardNumber;
     }
 }
