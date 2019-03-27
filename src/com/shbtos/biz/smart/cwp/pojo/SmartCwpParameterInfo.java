@@ -16,32 +16,22 @@ public class SmartCwpParameterInfo {
     private Double craneMoveSpeed; //桥机移动速度，0.75m/s
     private Long unlockTwistTime; //甲板上拆锁时间，甲板五层高及以上集装箱拆锁用时，90s
 
-//    private Long hatchCoverTime; //桥机作业单块舱盖板时间，240s
-//    private Long single20Time; //单20尺普通箱作业用时，120s
-//    private Long single20FootPadTime; //单20尺垫脚箱作业用时，180s
-//    private Long single20SeparateTime; //单20尺全隔槽作业用时，180s
-//    private Long single20HalfSeparateTime; //单20尺半隔槽作业用时，180s
-//    private Long single40Time; //单40尺普通箱作业用时，120s
-//    private Long single45Time; //单45尺普通箱作业用时，120s
-//    private Long double20Time; //双20尺普通箱作业用时，150s
-//    private Long double40Time; //双吊具40尺作业用时，140s
-//    private Long double45Time; //双吊具45尺作业用时，140s
-//    private Long specialCntTime; //超限箱、分体大件作业用时，360s
-    private String hatchCoverTime; //桥机作业单块舱盖板时间，240s
-    private String single20Time; //单20尺普通箱作业用时，120s
-    private String single20FootPadTime; //单20尺垫脚箱作业用时，180s
-    private String single20SeparateTime; //单20尺全隔槽作业用时，180s
-    private String single20HalfSeparateTime; //单20尺半隔槽作业用时，180s
-    private String single40Time; //单40尺普通箱作业用时，120s
-    private String single45Time; //单45尺普通箱作业用时，120s
-    private String double20Time; //双20尺普通箱作业用时，150s
-    private String double40Time; //双吊具40尺作业用时，140s
-    private String double45Time; //双吊具45尺作业用时，140s
-    private String specialCntTime; //超限箱、分体大件作业用时，360s
-    private String dangerCntTime; //直装直提危险品作业用时，360s
-    private Long badCntTime; //故障箱处理用时，360s
-    private Long hatchScanTime; //桥机换倍船扫时间，300s
-    private Double impactFactor; //特殊因素影响效率的影响因子，1.0
+    private String hatchCoverTime; //桥机作业单块舱盖板时间：240,240（装,卸）；240（装卸一样）
+    private String single20FootPadTime; //单20尺垫脚箱作业用时：180,180（装,卸）；180（装卸一样）
+    private String single20SeparateTime; //单20尺全隔槽作业用：180,180（装,卸）；180（装卸一样）
+    private String single20HalfSeparateTime; //单20尺半隔槽作业用时：180,180（装,卸）；180（装卸一样）
+    private String single20Time; //单20尺普通箱作业用时：120,120/130,130（甲板上装,甲板上卸/甲板下装,甲板下卸）；120/130（甲板上装卸一样/甲板下装卸一样）；120（甲板上下装卸一样）
+    private String single40Time; //单40尺普通箱作业用时：120,120/130,130（甲板上装,甲板上卸/甲板下装,甲板下卸）；120/130（甲板上装卸一样/甲板下装卸一样）；120（甲板上下装卸一样）
+    private String single45Time; //单45尺普通箱作业用时：120,120/130,130（甲板上装,甲板上卸/甲板下装,甲板下卸）；120/130（甲板上装卸一样/甲板下装卸一样）；120（甲板上下装卸一样）
+    private String double20Time; //双20尺普通箱作业用时：150,150/150,150（甲板上装,甲板上卸/甲板下装,甲板下卸）；120/130（甲板上装卸一样/甲板下装卸一样）；120（甲板上下装卸一样）
+    private String double40Time; //双吊具40尺作业用时：140,140/140,140（甲板上装,甲板上卸/甲板下装,甲板下卸）；140/140（甲板上装卸一样/甲板下装卸一样）；140（甲板上下装卸一样）
+    private String double45Time; //双吊具45尺作业用时：140,140/140,140（甲板上装,甲板上卸/甲板下装,甲板下卸）；140/140（甲板上装卸一样/甲板下装卸一样）；140（甲板上下装卸一样）
+    private String specialCntTime; //超限箱、分体大件作业用时：360,360/360,360（甲板上装,甲板上卸/甲板下装,甲板下卸）；360/360（甲板上装卸一样/甲板下装卸一样）；360（甲板上下装卸一样）
+    private String dangerCntTime; //直装直提危险品作业用时：360,360/360,360（甲板上装,甲板上卸/甲板下装,甲板下卸）；360/360（甲板上装卸一样/甲板下装卸一样）；360（甲板上下装卸一样）
+
+    private Long badCntTime; //故障箱处理用时：360s
+    private Long hatchScanTime; //桥机换倍船扫时间：300s
+    private Double impactFactor; //特殊因素影响效率的影响因子：1.0
 
     //单船功能参数
     private Boolean setupBridge;//是否过驾驶台
