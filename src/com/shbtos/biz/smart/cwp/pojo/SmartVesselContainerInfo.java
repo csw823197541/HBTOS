@@ -17,13 +17,13 @@ public class SmartVesselContainerInfo {
     private String yLocation;		//场箱位
     private String cSzCsizecd;     //箱尺寸
     private String cTypeCd;        //箱型
-    private String effg;	//空重
-    private String rfcfg;	//冷藏箱标记
-    private String dtpDnggcd;	//危险品代码
+    private String effg;	//空重：E/F
+    private String rfcfg;	//冷藏箱标记：Y/N
+    private String dtpDnggcd;	//危险品代码：9/8/6.1/4.2/3
     private String unNo; //危险品联合国编号
-    private String isHeight; // 是否高箱
-    private String ovlmtcd;		//超限代码
-    private String heiCheightcd; //箱高代码
+    private String isHeight; // 是否高箱：Y/N
+    private String ovlmtcd;		//超限代码： O/OW/OH/OG
+    private String heiCheightcd; //箱高代码：PQ/HQ
     private String dstPort;  //目的港
     private Double weight;         //重量
     private Long groupId;       //属性组
