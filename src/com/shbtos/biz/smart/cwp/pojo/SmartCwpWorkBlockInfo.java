@@ -24,6 +24,7 @@ public class SmartCwpWorkBlockInfo {
     private String deleteFlag; //删除标记，当传入作业块相应倍位m没有待作业的指令时，作业块标记为"Y"，否则为null或者为"N"
     private String workStatus; //作业块的作业状态
     private Long sentAmount; //已发送的Move数量
+    private String lockFlag; // 作业块锁定标记
 
     public String getCurrentCraneBayNo() {
         return currentCraneBayNo;
@@ -151,5 +152,13 @@ public class SmartCwpWorkBlockInfo {
 
     public void setSentAmount(Long sentAmount) {
         this.sentAmount = sentAmount;
+    }
+
+    public String getLockFlag() {
+        return lockFlag;
+    }
+
+    public void setLockFlag(String lockFlag) {
+        this.lockFlag = lockFlag;
     }
 }

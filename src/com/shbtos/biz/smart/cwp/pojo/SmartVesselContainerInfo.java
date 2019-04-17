@@ -59,6 +59,8 @@ public class SmartVesselContainerInfo {
     private Long cwpBlockId; //指令所在作业块的Id号
     private String directCntFlag; //直装箱标记，Y表示箱子标记为直装箱，N或者null表示非直装箱子
     private String dispatchedWiInfo; //表示该箱子是否派发了指令任务（如转堆），有的话发箱的时候暂时不发送，Y表示有wi，N或者空表示没有wi任务
+    private String reStowType; // 出翻舱标记
+    private String stowImportCntId; // 配载导入箱Id，说明是直装直提标记
 
     public String getDirectCntFlag() {
         return directCntFlag;
@@ -466,5 +468,21 @@ public class SmartVesselContainerInfo {
 
     public void setCwpBlockId(Long cwpBlockId) {
         this.cwpBlockId = cwpBlockId;
+    }
+
+    public String getReStowType() {
+        return reStowType;
+    }
+
+    public void setReStowType(String reStowType) {
+        this.reStowType = reStowType;
+    }
+
+    public String getStowImportCntId() {
+        return stowImportCntId;
+    }
+
+    public void setStowImportCntId(String stowImportCntId) {
+        this.stowImportCntId = stowImportCntId;
     }
 }
