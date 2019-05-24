@@ -27,6 +27,7 @@ public class SmartReCwpWorkOrderInfo {
     private String recycleWiFlag; //回收重排的指令标记，Y表示回收的指令；N或者null表示非回收的指令
     private String lockFlag; //是否被锁住标记，时间往后安排，Y表示锁住；N或者null表示正常执行的指令
     private Long cwpBlockId; //作业块Id
+    private String stowImportCntId; // 配载导入箱Id，说明是直装直提标记
 
     public String getLockFlag() {
         return lockFlag;
@@ -178,5 +179,13 @@ public class SmartReCwpWorkOrderInfo {
 
     public void setCwpBlockId(Long cwpBlockId) {
         this.cwpBlockId = cwpBlockId;
+    }
+
+    public String getStowImportCntId() {
+        return stowImportCntId;
+    }
+
+    public void setStowImportCntId(String stowImportCntId) {
+        this.stowImportCntId = stowImportCntId;
     }
 }
