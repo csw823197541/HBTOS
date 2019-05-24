@@ -50,6 +50,13 @@ public class SmartCwpParameterInfo {
     private String craneNotSameWorkTime; //桥机作业量不平均（桥机作业范围按驾驶台/烟囱划分，分割舱最少），Y/N
     private String splitRoad; //劈路原则，Y/N，默认是Y
 
+    // 双吊具控制参数
+    private Double allContainerWeight; // 双吊具工艺作业的集装箱合计重量限制，默认<=60000kg可以作业
+    private Double tandemWeightDiff; // 双吊具工艺一关作业的两箱重量差限制，默认<=20000kg可作业
+    private Double tandemHeightDiff; // 双吊具工艺一关作业的两箱高度差限制，默认<=40cm可作业
+    private String tandemContainerType; // 双吊具工艺可以作业的箱型，默认值："GP,HC,OT"。（OT箱带超限标记的不包括在内）
+    private String tandemDangerCnt; // 双吊具工艺可以作业危险品箱型类别，默认值："3,6,8,9"
+
     public String getCraneAdviceWorkBayNos() {
         return craneAdviceWorkBayNos;
     }
@@ -320,5 +327,45 @@ public class SmartCwpParameterInfo {
 
     public void setDividedHatchFirst(String dividedHatchFirst) {
         this.dividedHatchFirst = dividedHatchFirst;
+    }
+
+    public Double getAllContainerWeight() {
+        return allContainerWeight;
+    }
+
+    public void setAllContainerWeight(Double allContainerWeight) {
+        this.allContainerWeight = allContainerWeight;
+    }
+
+    public Double getTandemWeightDiff() {
+        return tandemWeightDiff;
+    }
+
+    public void setTandemWeightDiff(Double tandemWeightDiff) {
+        this.tandemWeightDiff = tandemWeightDiff;
+    }
+
+    public Double getTandemHeightDiff() {
+        return tandemHeightDiff;
+    }
+
+    public void setTandemHeightDiff(Double tandemHeightDiff) {
+        this.tandemHeightDiff = tandemHeightDiff;
+    }
+
+    public String getTandemContainerType() {
+        return tandemContainerType;
+    }
+
+    public void setTandemContainerType(String tandemContainerType) {
+        this.tandemContainerType = tandemContainerType;
+    }
+
+    public String getTandemDangerCnt() {
+        return tandemDangerCnt;
+    }
+
+    public void setTandemDangerCnt(String tandemDangerCnt) {
+        this.tandemDangerCnt = tandemDangerCnt;
     }
 }

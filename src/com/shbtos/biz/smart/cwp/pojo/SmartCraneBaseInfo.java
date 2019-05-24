@@ -26,6 +26,7 @@ public class SmartCraneBaseInfo {
     private Integer craneMaxCarryWeight;//桥吊的最大作业吨位
     private Long workBerthId;         //靠泊ID
     private String workVesselBay;//当前作业倍位
+    private String tandemFlag; // 双吊具工艺标志：Y表示桥机可以做双吊具工艺；N或者null表示桥机不可以做双吊具工艺
 
     public Long getWorkBerthId() {
         return workBerthId;
@@ -193,5 +194,13 @@ public class SmartCraneBaseInfo {
 
     public void setCraneMaxCarryWeight(Integer craneMaxCarryWeight) {
         this.craneMaxCarryWeight = craneMaxCarryWeight;
+    }
+
+    public String getTandemFlag() {
+        return tandemFlag;
+    }
+
+    public void setTandemFlag(String tandemFlag) {
+        this.tandemFlag = tandemFlag;
     }
 }

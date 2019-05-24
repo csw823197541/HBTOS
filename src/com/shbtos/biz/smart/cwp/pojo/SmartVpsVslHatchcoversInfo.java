@@ -22,6 +22,7 @@ public class SmartVpsVslHatchcoversInfo {
     private Long rightCoverFather; // 右边父甲板编号
     private Long frontCoverFather; // 前边父甲板编号
     private Long behiendCoverFather; // 后边父甲板编号
+    private Double weight; // 舱盖板重量，单位：kg
 
 
     public Long getBerthId() {
@@ -142,5 +143,13 @@ public class SmartVpsVslHatchcoversInfo {
 
     public void setBehiendCoverFather(Long behiendCoverFather) {
         this.behiendCoverFather = behiendCoverFather;
+    }
+
+    public Double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(Double weight) {
+        this.weight = weight;
     }
 }
