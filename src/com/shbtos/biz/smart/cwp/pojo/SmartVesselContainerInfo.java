@@ -21,9 +21,10 @@ public class SmartVesselContainerInfo {
     private String rfcfg;	//冷藏箱标记：Y/N
     private String dtpDnggcd;	//危险品代码：9/8/6.1/4.2/3
     private String unNo; //危险品联合国编号
-    private String isHeight; // 是否高箱：Y/N
     private String ovlmtcd;		//超限代码： O/OW/OH/OG
+    private String isHeight; // 是否高箱：Y/N
     private String heiCheightcd; //箱高代码：PQ/HQ
+    private String cntHeightDesc;//箱子具体高度描述
     private String dstPort;  //目的港
     private Double weight;         //重量
     private Long groupId;       //属性组
@@ -46,7 +47,6 @@ public class SmartVesselContainerInfo {
     private String moveStage; //箱子移动状态
     private String machineStatus; //作业中的箱子有这个字段，作业这个箱子的机械状态
     private String interactLanetp; //箱子在AGV上，是否派发车道
-    private String cntHeightDesc;//箱子具体高度描述
     private Boolean fixedWeightlevel; //是否指定重量等级
     private String cwoManualWorkflow; //人工指定作业工艺，Y表示人工指定作业工艺，N或者空表示非人工指定
     private String cwoManualSeqno; //人工指定作业顺序，Y表示人工指定的作业顺序，N或者空表示非人工指定
