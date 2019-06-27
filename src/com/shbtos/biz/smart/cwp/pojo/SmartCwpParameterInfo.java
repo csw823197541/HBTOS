@@ -57,6 +57,8 @@ public class SmartCwpParameterInfo {
     private String tandemContainerType; // 双吊具工艺可以作业的箱型，默认值："GP,HC,OT"。（OT箱带超限标记的不包括在内）
     private String tandemDangerCnt; // 双吊具工艺可以作业危险品箱型类别，默认值："3,6,8,9"
 
+    private String multiThreadFlag; // 是否使用多线程，"Y"表示使用多线程，"N"或者null表示不使用多线程
+
     public String getCraneAdviceWorkBayNos() {
         return craneAdviceWorkBayNos;
     }
@@ -367,5 +369,13 @@ public class SmartCwpParameterInfo {
 
     public void setTandemDangerCnt(String tandemDangerCnt) {
         this.tandemDangerCnt = tandemDangerCnt;
+    }
+
+    public String getMultiThreadFlag() {
+        return multiThreadFlag;
+    }
+
+    public void setMultiThreadFlag(String multiThreadFlag) {
+        this.multiThreadFlag = multiThreadFlag;
     }
 }
