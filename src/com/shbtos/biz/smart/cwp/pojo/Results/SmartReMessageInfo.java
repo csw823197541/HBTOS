@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Administrator on 2017/3/6.
+ * Created by csw on 2017/3/6.
  */
 
 
@@ -12,6 +12,7 @@ public class SmartReMessageInfo {
 
     private String executeLog; //执行日志
     private String errorLog; //错误日志
+    private String warnLog; //错误日志
 
     private Map<Long, StringBuffer> executeLogMap;
     private Map<Long, StringBuffer> errorLogMap;
@@ -75,52 +76,57 @@ public class SmartReMessageInfo {
         }
     }
 
-    public String getExecuteLogByBerthId(Long berthId) {
-        if (executeLogMap.isEmpty()) {
-            return executeLog;
-        } else {
-            executeLogMap.get(berthId).append(executeLog);
-            return executeLogMap.get(berthId).toString();
+    public String getWarnLog() {
+        return warnLog;
+    }
+
+    public void setWarnLog(String warnLog) {
+        if (warnLog != null) {
+            this.warnLog = warnLog;
         }
+    }
+
+    public String getExecuteLogByBerthId(Long berthId) {
+        return getLogByBerthId(berthId, executeLog, executeLogMap);
     }
 
     public String getErrorLogByBerthId(Long berthId) {
-        if (errorLogMap.isEmpty()) {
-            return errorLog;
-        } else {
-            errorLogMap.get(berthId).append(errorLog);
-            return errorLogMap.get(berthId).toString();
-        }
+        return getLogByBerthId(berthId, errorLog, errorLogMap);
     }
 
     public String getWarnLogByBerthId(Long berthId) {
-        return warnLogMap.get(berthId).toString();
+        return getLogByBerthId(berthId, warnLog, warnLogMap);
+    }
+
+    private String getLogByBerthId(Long berthId, String log, Map<Long, StringBuffer> logMap) {
+        if (logMap.isEmpty()) {
+            return log;
+        } else {
+            if (log != null) {
+                logMap.get(berthId).append(log);
+            }
+            return logMap.get(berthId).toString();
+        }
     }
 
     public void putExecuteLog(Long berthId, String info) {
-        if (info != null && !"".equals(info.trim())) {
-            if (executeLogMap.get(berthId) == null) {
-                executeLogMap.put(berthId, new StringBuffer());
-            }
-            executeLogMap.get(berthId).append(info);
-        }
+        putLogByBerthId(berthId, info, executeLogMap);
     }
 
     public void putErrorLog(Long berthId, String info) {
-        if (info != null && !"".equals(info.trim())) {
-            if (errorLogMap.get(berthId) == null) {
-                errorLogMap.put(berthId, new StringBuffer());
-            }
-            errorLogMap.get(berthId).append(info);
-        }
+        putLogByBerthId(berthId, info, errorLogMap);
     }
 
     public void putWarnLog(Long berthId, String info) {
-        if (info != null) {
-            if (warnLogMap.get(berthId) == null) {
-                warnLogMap.put(berthId, new StringBuffer());
+        putLogByBerthId(berthId, info, warnLogMap);
+    }
+
+    private void putLogByBerthId(Long berthId, String info, Map<Long, StringBuffer> logMap) {
+        if (info != null && !"".equals(info.trim())) {
+            if (logMap.get(berthId) == null) {
+                logMap.put(berthId, new StringBuffer());
             }
-            warnLogMap.get(berthId).append(info);
+            logMap.get(berthId).append(info);
         }
     }
 
