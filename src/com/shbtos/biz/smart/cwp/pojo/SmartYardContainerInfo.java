@@ -21,7 +21,7 @@ public class SmartYardContainerInfo {
     private Double weight;                     //箱重
     private String dtpDnggcd;                      //是否危险品(Y,N)
     private String rfcfg;                      //是否冷藏(Y,N)
-    private String UnNo; //危险品联合国编号
+    private String unNo; //危险品联合国编号
     private String stowagfg;                    //是否可配载
     private String isHeight; // 是否高箱
     private String heiCheightcd; //箱高代码
@@ -195,11 +195,11 @@ public class SmartYardContainerInfo {
     }
 
     public String getUnNo() {
-        return UnNo;
+        return unNo;
     }
 
     public void setUnNo(String unNo) {
-        UnNo = unNo;
+        this.unNo = unNo;
     }
 
     public String getIsHeight() {
