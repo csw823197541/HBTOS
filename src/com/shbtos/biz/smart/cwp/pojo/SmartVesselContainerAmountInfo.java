@@ -7,7 +7,7 @@ package com.shbtos.biz.smart.cwp.pojo;
 public class SmartVesselContainerAmountInfo {
 
     private Long berthId; // 靠泊ID
-    private String dlType; // 装卸类型
+    private String bayNo; // 倍位号
     private String size; // 箱子尺寸
     private Integer containerAmount; // 箱量
 
@@ -19,12 +19,12 @@ public class SmartVesselContainerAmountInfo {
         this.berthId = berthId;
     }
 
-    public String getDlType() {
-        return dlType;
+    public String getBayNo() {
+        return bayNo;
     }
 
-    public void setDlType(String dlType) {
-        this.dlType = dlType;
+    public void setBayNo(String bayNo) {
+        this.bayNo = bayNo;
     }
 
     public String getSize() {

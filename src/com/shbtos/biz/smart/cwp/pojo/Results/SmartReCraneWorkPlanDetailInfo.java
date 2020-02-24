@@ -3,15 +3,16 @@ package com.shbtos.biz.smart.cwp.pojo.Results;
 import java.util.Date;
 
 /**
- * Created by csw on 2018/9/17.
- * Description: 桥机资源策划结果，桥机作业船舶的时间段（计划开始/结束时间）
+ * Created by csw on 2020/02/24.
+ * Description: 资源策划算法返回的桥机详细信息，桥机在船舶上作业，每小时一条记录
  */
-public class SmartReCraneWorkPlanInfo {
+public class SmartReCraneWorkPlanDetailInfo {
 
-    private Long berthId;//靠泊ID
-    private String craneNo;//桥机ID
-    private Date workingStartTime;  //开始作业时间
-    private Date workingEndTime;   //结束作业时间
+    private Long berthId; // 靠泊ID
+    private String craneNo; // 桥机ID
+    private Date workingStartTime; // 开始作业时间
+    private Date workingEndTime; // 结束作业时间
+    private Integer planCntAmount; // 计划作业箱量
 
     public Long getBerthId() {
         return berthId;
@@ -43,5 +44,13 @@ public class SmartReCraneWorkPlanInfo {
 
     public void setWorkingEndTime(Date workingEndTime) {
         this.workingEndTime = workingEndTime;
+    }
+
+    public Integer getPlanCntAmount() {
+        return planCntAmount;
+    }
+
+    public void setPlanCntAmount(Integer planCntAmount) {
+        this.planCntAmount = planCntAmount;
     }
 }
