@@ -3,15 +3,15 @@ package com.shbtos.biz.smart.cwp.pojo;
 import java.util.Date;
 
 /**
- * Created by liuminhang on 2017/1/18.
- * 驳船作业计划
+ * Created by csw on 2020/02/24.
+ * Description: 作业驳船的桥机信息，桥机、船、作业时间段
  */
 public class SmartBarWorkPlanInfo {
 
-    private String craneNo; //桥吊号
-    private Long berthId; //作业船舶，靠泊Id
-    private Date workStartTime; //作业开始时间
-    private Date workEndTime; //作业结束时间
+    private String craneNo; // 桥吊号
+    private Long berthId; // 作业船舶，靠泊Id
+    private Date workStartTime; // 作业开始时间
+    private Date workEndTime; // 作业结束时间
 
     public String getCraneNo() {
         return craneNo;

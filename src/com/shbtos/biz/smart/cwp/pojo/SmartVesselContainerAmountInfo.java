@@ -2,14 +2,14 @@ package com.shbtos.biz.smart.cwp.pojo;
 
 /**
  * Created by csw on 2018/9/16.
- * Description:
+ * Description: 船舶干路图信息
  */
 public class SmartVesselContainerAmountInfo {
 
-    private Long berthId;    //靠泊ID
-    private String dlType;   //装卸类型
-    private String size;    //箱子尺寸
-    private Integer containerAmount;	//箱量
+    private Long berthId; // 靠泊ID
+    private String dlType; // 装卸类型
+    private String size; // 箱子尺寸
+    private Integer containerAmount; // 箱量
 
     public Long getBerthId() {
         return berthId;

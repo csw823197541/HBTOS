@@ -1,8 +1,8 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by liuminhang on 2017/1/18.
- * 倍位信息（暂不考虑一个舱内多于两个贝位的情况）
+ * Created by csw on 2018/9/16.
+ * Description: 倍位信息（暂不考虑一个舱内多于两个贝位的情况）
  */
 public class SmartVpsVslBaysInfo {
 

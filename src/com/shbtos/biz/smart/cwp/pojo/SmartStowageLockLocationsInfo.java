@@ -1,14 +1,15 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by liuminhang on 2017/1/19.
- * 配载预留位置，用于控制配载加载和避免亏舱的情况
+ * Created by csw on 2017/6/8.
+ * Description: 配载预留位置，用于控制配载加载和避免亏舱的情况
  */
 public class SmartStowageLockLocationsInfo {
-    private Long berthId;         //靠泊ID
-    private Long hatchId;         //舱ID
-    private String vLocation;		//船箱位
-    private String lduldfg;    //装卸船标志
+
+    private Long berthId; //靠泊ID
+    private Long hatchId; //舱ID
+    private String vLocation; //船箱位
+    private String lduldfg; //装卸船标志
 
     public Long getBerthId() {
         return berthId;

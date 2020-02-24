@@ -3,8 +3,8 @@ package com.shbtos.biz.smart.cwp.pojo;
 import java.util.Date;
 
 /**
- * Created by liuminhang on 2017/1/19.
- * 装船预配（或者实配）与卸船船图数据信息
+ * Created by csw on 2018/9/16.
+ * Description: 装船预配（或者实配）与卸船船图数据信息
  */
 public class SmartVesselContainerInfo {
 

@@ -6,8 +6,8 @@ package com.shbtos.biz.smart.cwp.pojo;
 public class SmartStowageConfigurationInfo {
 
     private Long berthId; //靠泊Id
-    private String twinWeightDifference;                    // 双箱吊两个箱子的重量差
-    private String twinHeightDifference;                    //双箱吊两个箱子的高度差
+    private String twinWeightDifference; // 双箱吊两个箱子的重量差
+    private String twinHeightDifference; //双箱吊两个箱子的高度差
     private Boolean reverseLoad;//舱内倒配参数
     private Integer weightLevelPoint; //重量等级罚分基数：同一个重量等级的箱子在不同的位置罚分不同，默认值60，建议参考值范围50-80
     private Double proportion; //箱区装卸能力比：箱区的装卸比例，给卸船空出工作能力，默认值0.9，建议参考值范围0.8-0.9

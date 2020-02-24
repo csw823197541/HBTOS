@@ -3,7 +3,8 @@ package com.shbtos.biz.smart.cwp.pojo;
 import java.util.Date;
 
 /**
- * Created by Administrator on 2017/3/2.
+ * Created by csw on 2020/2/24.
+ * Description: 桥机开工时间，以及桥机作业状态，主要自动发箱用于控制桥机是否可以发送指令
  */
 public class SmartCraneWorkStartTmInfo {
 

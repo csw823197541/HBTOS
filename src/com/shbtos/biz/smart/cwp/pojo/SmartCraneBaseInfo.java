@@ -1,8 +1,8 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by liuminhang on 2017/1/18.
- *桥机信息，用于控制桥吊的作业效率、桥吊安全距离和作业范围
+ * Created by csw on 2020/02/24.
+ * Description: 桥机信息，用于控制桥吊的作业效率、桥吊安全距离和作业范围
  */
 public class SmartCraneBaseInfo {
     private String craneNo;//桥吊ID

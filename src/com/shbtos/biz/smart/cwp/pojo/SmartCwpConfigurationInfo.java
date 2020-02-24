@@ -3,7 +3,7 @@ package com.shbtos.biz.smart.cwp.pojo;
 
 /**
  * Created by csw on 2017/4/19 20:04.
- * Explain: CWP算法相关的配置参数
+ * Explain: CWP算法相关的配置参数，老版本
  */
 public class SmartCwpConfigurationInfo {
 

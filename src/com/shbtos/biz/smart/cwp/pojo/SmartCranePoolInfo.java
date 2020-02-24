@@ -3,15 +3,15 @@ package com.shbtos.biz.smart.cwp.pojo;
 import java.util.Date;
 
 /**
- * Created by Administrator on 2017/2/21.
+ * Created by csw on 2018/7/18.
+ * Description: 桥机池信息
  */
 public class SmartCranePoolInfo {
 
-    private Long poolId;         //桥吊池ID
-    private String craneNo;//桥吊ID
-    private Date workStartTime;//作业开始时间
-    private Date workEndTime;//作业结束时间
-
+    private Long poolId; // 桥吊池ID
+    private String craneNo; // 桥吊ID
+    private Date workStartTime; // 作业开始时间
+    private Date workEndTime; // 作业结束时间
 
     public Long getPoolId() {
         return poolId;

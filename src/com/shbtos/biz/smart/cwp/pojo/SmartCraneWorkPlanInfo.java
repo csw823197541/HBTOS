@@ -3,15 +3,15 @@ package com.shbtos.biz.smart.cwp.pojo;
 import java.util.Date;
 
 /**
- * Created by liuminhang on 2017/1/18.
- * 可以安排桥吊的作业时间
+ * Created by csw on 2020/2/24.
+ * Description: 桥机作业计划，即已经安排船舶的CWP计划，桥机使用时间段
  */
 public class SmartCraneWorkPlanInfo {
 
-    private String craneNo; //桥吊号
-    private Long berthId; //作业船舶，靠泊Id
-    private Date workStartTime; //作业开始时间
-    private Date workEndTime; //作业结束时间
+    private String craneNo; // 桥吊号
+    private Long berthId; // 作业船舶，靠泊Id
+    private Date workStartTime; // 作业开始时间
+    private Date workEndTime; // 作业结束时间
 
     public String getCraneNo() {
         return craneNo;

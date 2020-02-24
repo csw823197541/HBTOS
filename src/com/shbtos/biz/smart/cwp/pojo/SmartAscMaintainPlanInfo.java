@@ -3,14 +3,15 @@ package com.shbtos.biz.smart.cwp.pojo;
 import java.util.Date;
 
 /**
- * Created by Administrator on 2017/2/28.
+ * Created by csw on 2020/02/24.
+ * Description: 轨道吊维修计划信息
  */
 public class SmartAscMaintainPlanInfo {
 
-    private Long areaNo;         //箱区
-    private Long ascNo;         //机械号
-    private Date maintainStartTime	;	//维护开始时间
-    private Date maintainEndTime;    //维护结束时间
+    private Long areaNo; // 箱区
+    private Long ascNo; // 机械号
+    private Date maintainStartTime; // 维护开始时间
+    private Date maintainEndTime; // 维护结束时间
 
 
     public Date getMaintainEndTime() {

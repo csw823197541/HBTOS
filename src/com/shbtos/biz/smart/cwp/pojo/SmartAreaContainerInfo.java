@@ -1,20 +1,19 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by liuminhang on 2017/1/19.
- * 堆场信息，用于桥吊开路，控制箱区的冲突的情况
+ * Created by csw on 2020/02/24.
+ * Description: 堆场箱区箱量统计信息，用于桥吊开路，控制箱区的作业冲突情况
  */
 public class SmartAreaContainerInfo {
 
-    private Long berthId; //靠泊ID
-    private Long groupId; //属性组
-    private Long weightId; //重量等级ID
-    private String areaNo; //箱区号
-    private String areaType; //箱区类型
-    private Long totalNumber; //总数
-    private Long canStowNumber; //可配数量
-    private Long canNotStowNumber; //不可配数量
-
+    private Long berthId; // 靠泊ID
+    private Long groupId; // 属性组
+    private Long weightId; // 重量等级ID
+    private String areaNo; // 箱区号
+    private String areaType; // 箱区类型
+    private Long totalNumber; // 总数
+    private Long canStowNumber; // 可配数量
+    private Long canNotStowNumber; // 不可配数量
 
     public Long getBerthId() {
         return berthId;

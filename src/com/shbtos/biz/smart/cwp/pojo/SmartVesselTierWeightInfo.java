@@ -1,7 +1,8 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by Administrator on 2017/2/28.
+ * Created by csw on 2017/1/18.
+ * Description: 船舶槽重设置
  */
 public class SmartVesselTierWeightInfo {
 
@@ -14,7 +15,6 @@ public class SmartVesselTierWeightInfo {
     private Double startWeight;//偏差小重量
     private Double endWeight;// 偏差大重量
     private String heavyPressLight;// 重压轻
-
 
     public Long getBerthId() {
         return berthId;

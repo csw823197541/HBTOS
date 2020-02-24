@@ -12,21 +12,16 @@ import java.util.List;
  */
 public class SmartCwpImportData {
 
-    private List<SmartAdviseConfigureInfo> smartAdviseConfigureInfoList;
     private List<SmartAreaContainerInfo> smartAreaContainerInfoList;
     private List<SmartAssistEquipmentInfo> smartAssistEquipmentInfoList;
     private List<SmartContainerGroupInfo> smartContainerGroupInfoList;
     private List<SmartCraneBaseInfo> smartCraneBaseInfoList;
     private List<SmartCraneHatchCoverInfo> smartCraneHatchCoverInfoList;
     private List<SmartCraneWorkFlowInfo> smartCraneWorkFlowInfoList;
-    private List<SmartHatchQuantityConfigureInfo> smartHatchQuantityConfigureInfoList;
-    private List<SmartManualInfo> smartManualInfoList;
     private List<SmartScheduleIdInfo> smartScheduleIdInfoList;
     private List<SmartStowageLockLocationsInfo> smartStowageLockLocationsInfoList;
     private List<SmartVesselContainerInfo> smartVesselContainerInfoList;
     private List<SmartVesselMachinesInfo> smartVesselMachinesInfoList;
-    private List<SmartVesselWholeWeightInfo> smartVesselWholeWeightInfoList;
-    private List<SmartVesselWorkTimeInfo> smartVesselWorkTimeInfoList;
     private List<SmartVpsVslBaysInfo> smartVpsVslBaysInfoList;
     private List<SmartVpsVslHatchcoversInfo> smartVpsVslHatchcoversInfoList;
     private List<SmartVpsVslHatchsInfo> smartVpsVslHatchsInfoList;
@@ -34,7 +29,6 @@ public class SmartCwpImportData {
     private List<SmartVpsVslRowsInfo> smartVpsVslRowsInfoList;
     private List<SmartCranePoolInfo> smartCranePoolInfoList;
     private List<SmartVesselCranePoolInfo> smartVesselCranePoolInfoList;
-    private List<SmartCranePlanInfo> smartCranePlanInfoList;
     private List<SmartCraneMaintainPlanInfo> smartCraneMaintainPlanInfoList;
     private List<SmartCraneMoveRangeInfo> smartCraneMoveRangeInfoList;
 
@@ -50,7 +44,6 @@ public class SmartCwpImportData {
     private List<SmartBarWorkPlanInfo> smartBarWorkPlanInfoList;
 
     public SmartCwpImportData(){
-        this.smartAdviseConfigureInfoList = new ArrayList<>();
         this.smartAreaContainerInfoList = new ArrayList<>();
         this.smartAssistEquipmentInfoList = new ArrayList<>();
         this.smartContainerGroupInfoList = new ArrayList<>();
@@ -58,14 +51,10 @@ public class SmartCwpImportData {
         this.smartCraneHatchCoverInfoList = new ArrayList<>();
         this.smartCraneWorkFlowInfoList = new ArrayList<>();
         this.smartCraneWorkPlanInfoList = new ArrayList<>();
-        this.smartHatchQuantityConfigureInfoList = new ArrayList<>();
-        this.smartManualInfoList = new ArrayList<>();
         this.smartScheduleIdInfoList = new ArrayList<>();
         this.smartStowageLockLocationsInfoList = new ArrayList<>();
         this.smartVesselContainerInfoList = new ArrayList<>();
         this.smartVesselMachinesInfoList = new ArrayList<>();
-        this.smartVesselWholeWeightInfoList = new ArrayList<>();
-        this.smartVesselWorkTimeInfoList = new ArrayList<>();
         this.smartVpsVslBaysInfoList = new ArrayList<>();
         this.smartVpsVslHatchcoversInfoList = new ArrayList<>();
         this.smartVpsVslHatchsInfoList = new ArrayList<>();
@@ -73,7 +62,6 @@ public class SmartCwpImportData {
         this.smartVpsVslRowsInfoList = new ArrayList<>();
         this.smartCranePoolInfoList=new ArrayList<>();
         this.smartVesselCranePoolInfoList=new ArrayList<>();
-        this.smartCranePlanInfoList=new ArrayList<>();
         this.smartCraneMaintainPlanInfoList = new ArrayList<>();
         this.smartCraneMoveRangeInfoList = new ArrayList<>();
         this.smartCwpConfigurationInfoList = new ArrayList<>();
@@ -142,14 +130,6 @@ public class SmartCwpImportData {
         this.smartCraneMaintainPlanInfoList = smartCraneMaintainPlanInfoList;
     }
 
-    public List<SmartAdviseConfigureInfo> getSmartAdviseConfigureInfoList() {
-        return smartAdviseConfigureInfoList;
-    }
-
-    public void setSmartAdviseConfigureInfoList(List<SmartAdviseConfigureInfo> smartAdviseConfigureInfoList) {
-        this.smartAdviseConfigureInfoList = smartAdviseConfigureInfoList;
-    }
-
     public List<SmartAreaContainerInfo> getSmartAreaContainerInfoList() {
         return smartAreaContainerInfoList;
     }
@@ -206,22 +186,6 @@ public class SmartCwpImportData {
         this.smartCraneWorkPlanInfoList = smartCraneWorkPlanInfoList;
     }
 
-    public List<SmartHatchQuantityConfigureInfo> getSmartHatchQuantityConfigureInfoList() {
-        return smartHatchQuantityConfigureInfoList;
-    }
-
-    public void setSmartHatchQuantityConfigureInfoList(List<SmartHatchQuantityConfigureInfo> smartHatchQuantityConfigureInfoList) {
-        this.smartHatchQuantityConfigureInfoList = smartHatchQuantityConfigureInfoList;
-    }
-
-    public List<SmartManualInfo> getSmartManualInfoList() {
-        return smartManualInfoList;
-    }
-
-    public void setSmartManualInfoList(List<SmartManualInfo> smartManualInfoList) {
-        this.smartManualInfoList = smartManualInfoList;
-    }
-
     public List<SmartScheduleIdInfo> getSmartScheduleIdInfoList() {
         return smartScheduleIdInfoList;
     }
@@ -252,22 +216,6 @@ public class SmartCwpImportData {
 
     public void setSmartVesselMachinesInfoList(List<SmartVesselMachinesInfo> smartVesselMachinesInfoList) {
         this.smartVesselMachinesInfoList = smartVesselMachinesInfoList;
-    }
-
-    public List<SmartVesselWholeWeightInfo> getSmartVesselWholeWeightInfoList() {
-        return smartVesselWholeWeightInfoList;
-    }
-
-    public void setSmartVesselWholeWeightInfoList(List<SmartVesselWholeWeightInfo> smartVesselWholeWeightInfoList) {
-        this.smartVesselWholeWeightInfoList = smartVesselWholeWeightInfoList;
-    }
-
-    public List<SmartVesselWorkTimeInfo> getSmartVesselWorkTimeInfoList() {
-        return smartVesselWorkTimeInfoList;
-    }
-
-    public void setSmartVesselWorkTimeInfoList(List<SmartVesselWorkTimeInfo> smartVesselWorkTimeInfoList) {
-        this.smartVesselWorkTimeInfoList = smartVesselWorkTimeInfoList;
     }
 
     public List<SmartVpsVslBaysInfo> getSmartVpsVslBaysInfoList() {
@@ -324,14 +272,6 @@ public class SmartCwpImportData {
 
     public void setSmartVesselCranePoolInfoList(List<SmartVesselCranePoolInfo> smartVesselCranePoolInfoList) {
         this.smartVesselCranePoolInfoList = smartVesselCranePoolInfoList;
-    }
-
-    public List<SmartCranePlanInfo> getSmartCranePlanInfoList() {
-        return smartCranePlanInfoList;
-    }
-
-    public void setSmartCranePlanInfoList(List<SmartCranePlanInfo> smartCranePlanInfoList) {
-        this.smartCranePlanInfoList = smartCranePlanInfoList;
     }
 
     public List<SmartCraneMoveRangeInfo> getSmartCraneMoveRangeInfoList() {

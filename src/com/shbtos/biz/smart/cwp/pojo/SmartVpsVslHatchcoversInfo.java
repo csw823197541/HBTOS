@@ -1,8 +1,8 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by liuminhang on 2017/1/18.
- * 舱盖板信息
+ * Created by csw on 2018/9/16.
+ * Description: 舱盖板信息
  */
 public class SmartVpsVslHatchcoversInfo {
 

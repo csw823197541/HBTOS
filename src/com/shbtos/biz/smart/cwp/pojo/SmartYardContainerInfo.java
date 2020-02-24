@@ -4,28 +4,28 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/2/28.
+ * Created by csw on 2017/4/10 21:18.
+ * Explain: 在场箱信息
  */
 public class SmartYardContainerInfo {
 
-
     private Long berthId;//靠泊ID
-    private Long voyageId;                     //航次ID
-    private Long containerId;        //唯一箱id
-    private String containerNo;        //箱号
-    private String areaNo;             //箱所在箱区号
-    private String ylocation;                 //场箱位
-    private String ctypeCd;                   //箱型
-    private String cszCsizecd;              //尺寸
-    private String dstPort;                    //目的港
-    private Double weight;                     //箱重
-    private String dtpDnggcd;                      //是否危险品(Y,N)
-    private String rfcfg;                      //是否冷藏(Y,N)
+    private Long voyageId; //航次ID
+    private Long containerId; //唯一箱id
+    private String containerNo; //箱号
+    private String areaNo; //箱所在箱区号
+    private String ylocation; //场箱位
+    private String ctypeCd; //箱型
+    private String cszCsizecd; //尺寸
+    private String dstPort; //目的港
+    private Double weight; //箱重
+    private String dtpDnggcd; //是否危险品(Y,N)
+    private String rfcfg; //是否冷藏(Y,N)
     private String unNo; //危险品联合国编号
-    private String stowagfg;                    //是否可配载
+    private String stowagfg; //是否可配载
     private String isHeight; // 是否高箱
     private String heiCheightcd; //箱高代码
-    private String effg;// 空/重标记
+    private String effg; // 空/重标记
     private String cntType; //箱子状态，DOC表示资料箱子
 
     private Date planStartWorkTime; //计划开始作业时间

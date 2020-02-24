@@ -1,10 +1,11 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by liuminhang on 2017/1/18.
- * 船舶机械信息，包括驾驶台和烟囱等信息，用于计算舱和舱的距离和隔驾驶台同时作业等情况
+ * Created by csw on 2017/1/18.
+ * Description: 船舶机械信息，包括驾驶台和烟囱等信息，用于计算舱和舱的距离和隔驾驶台同时作业等情况
  */
 public class SmartVesselMachinesInfo {
+
     private String vesselCode; //船舶代码
     private String machineNo; //机械编号
     private String machineType;//机械类型

@@ -6,10 +6,10 @@ package com.shbtos.biz.smart.cwp.pojo;
  */
 public class SmartCraneMoveRangeInfo {
 
-    private Long berthId;//桥机在船舶berthId上
-    private String craneNo;//桥机号
-    private String startBayNo;//船舶起始所在倍位号
-    private String endBayNo;//船舶终止所在倍位号
+    private Long berthId; // 桥机在船舶berthId上
+    private String craneNo; // 桥机号
+    private String startBayNo; // 船舶起始所在倍位号
+    private String endBayNo; // 船舶终止所在倍位号
 
     public Long getBerthId() {
         return berthId;

@@ -3,26 +3,28 @@ package com.shbtos.biz.smart.cwp.pojo;
 import java.util.Date;
 
 /**
- * Created by Administrator on 2017/3/2.
+ * Created by csw on 2020/02/24.
+ * Description: 当前一个小时时间段内，每个箱区作业的作业指令信息
+ *  用于自动发箱均衡箱区出箱能力
  */
 public class SmartAreaTaskInfo {
 
-    private Long berthId; //靠泊ID
-    private String vpcCntrId; //唯一编号
-    private String craneNo; //桥机号
-    private Long cwpwkmovenum; //桥机作业顺序号
-    private String lduld; //装卸标志
-    private String yardContainerId; //箱Id号
-    private String cszCsizecd; //箱尺寸
-    private String yLocation; //计划提箱位置, 场箱位：倍.排.层
-    private String vLocation; //计划放箱位置, 船箱位：倍.排.层
-    private Date workingStartTime; //计划开始时间
-    private Date workingEndTime; //计划结束时间
-    private String moveKind; //作业类型（DSCH，LOAD，SHIFTIN，SHIFTOUT（转堆））
-    private String workFlow; //作业工艺
-    private Long voyId; //航次Id，进口航次或出口航次
-    private String workStatus; //指令状态:发送A; 完成C,RC; 作业中W; 未发送Y,S,P; 退卸或退装R
-    private String workIsExchangeLabel; //指令是否可以互相交换标识，标识相同的指令即满足交换规则
+    private Long berthId; // 靠泊ID
+    private String vpcCntrId; // 唯一编号
+    private String craneNo; // 桥机号
+    private Long cwpwkmovenum; // 桥机作业顺序号
+    private String lduld; // 装卸标志
+    private String yardContainerId; // 箱Id号
+    private String cszCsizecd; // 箱尺寸
+    private String yLocation; // 计划提箱位置, 场箱位：倍.排.层
+    private String vLocation; // 计划放箱位置, 船箱位：倍.排.层
+    private Date workingStartTime; // 计划开始时间
+    private Date workingEndTime; // 计划结束时间
+    private String moveKind; // 作业类型（DSCH，LOAD，SHIFTIN，SHIFTOUT（转堆））
+    private String workFlow; // 作业工艺
+    private Long voyId; // 航次Id，进口航次或出口航次
+    private String workStatus; // 指令状态:发送A; 完成C,RC; 作业中W; 未发送Y,S,P; 退卸或退装R
+    private String workIsExchangeLabel; // 指令是否可以互相交换标识，标识相同的指令即满足交换规则
 
     public Long getBerthId() {
         return berthId;

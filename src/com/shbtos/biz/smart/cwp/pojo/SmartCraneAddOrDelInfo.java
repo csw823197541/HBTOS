@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * Created by csw on 2018/1/16.
- * Description:
+ * Description: 加减桥机信息
  */
 public class SmartCraneAddOrDelInfo {
 

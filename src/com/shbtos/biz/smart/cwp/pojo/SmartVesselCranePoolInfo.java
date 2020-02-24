@@ -3,7 +3,8 @@ package com.shbtos.biz.smart.cwp.pojo;
 import java.util.Date;
 
 /**
- * Created by Administrator on 2017/2/21.
+ * Created by csw on 2018/9/16.
+ * Description: 船舶桥机关联桥机池信息
  */
 public class SmartVesselCranePoolInfo {
     private Long berthId;         //靠泊ID

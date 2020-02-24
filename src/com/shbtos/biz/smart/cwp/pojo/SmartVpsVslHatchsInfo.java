@@ -1,8 +1,8 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by liuminhang on 2017/1/18.
- *舱信息
+ * Created by csw on 2018/9/16.
+ * Description: 舱位信息
  */
 public class SmartVpsVslHatchsInfo {
 
@@ -13,8 +13,7 @@ public class SmartVpsVslHatchsInfo {
     private Double hatchLength;//长度
     private Double hatchWidth;//宽度
     private Double hatchPosition ;//舱位置，相对于船头
-//中心位置由CWP计算
-
+    //中心位置由CWP计算
 
     public Long getHatchId() {
         return hatchId;

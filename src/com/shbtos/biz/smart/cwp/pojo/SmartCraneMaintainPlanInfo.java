@@ -3,15 +3,16 @@ package com.shbtos.biz.smart.cwp.pojo;
 import java.util.Date;
 
 /**
- * Created by Administrator on 2017/2/21.
+ * Created by csw on 2018/7/18.
+ * Description: 桥机维修计划信息
  */
 public class SmartCraneMaintainPlanInfo {
 
-    private String craneNo;//桥吊ID
-    private Date MaintainStartTime	;	//维护开始时间
-    private Date MaintainEndTime;    //维护结束时间
-    private String craneStatus;//桥吊作业状态故障
-    private String craneMoveStatus; //是否可以移动
+    private String craneNo; // 桥吊ID
+    private Date MaintainStartTime;	// 维护开始时间
+    private Date MaintainEndTime; // 维护结束时间
+    private String craneStatus; // 桥吊作业状态故障
+    private String craneMoveStatus; // 是否可以移动
 
     public String getCraneStatus() {
         return craneStatus;

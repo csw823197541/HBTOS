@@ -1,8 +1,8 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by liuminhang on 2017/1/18.
- * 船箱位信息,只有小贝
+ * Created by csw on 2018/9/16.
+ * Description: 船箱位信息,只有小贝
  */
 public class SmartVpsVslLocationsInfo {
     private String location;//船箱位,目前固定6位

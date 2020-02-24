@@ -2,13 +2,13 @@ package com.shbtos.biz.smart.cwp.pojo;
 
 /**
  * Created by csw on 2018/9/16.
- * Description:
+ * Description: 人工建议的开路桥机信息
  */
 public class SmartCraneManualInfo {
 
-    private Long berthId;   //靠泊ID
-    private Integer adviseCraneNumber;//人工建议开路数
-    private String adviseCraneNos;//人工建议使用哪些桥机，用","隔开
+    private Long berthId; // 靠泊ID
+    private Integer adviseCraneNumber; // 人工建议开路数
+    private String adviseCraneNos; // 人工建议使用哪些桥机，用","隔开
 
     public Long getBerthId() {
         return berthId;

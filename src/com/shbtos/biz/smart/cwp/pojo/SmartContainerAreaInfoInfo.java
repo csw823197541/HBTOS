@@ -1,17 +1,18 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by Administrator on 2017/2/28.
+ * Created by csw on 2020/02/24.
+ * Description: 箱区属性信息，
  */
 public class SmartContainerAreaInfoInfo {
 
-    private String areaNo;//箱区ID
-    private Integer bayNumber;//箱区倍位数
-    private Integer rowNumber;//排的数量
-    private Integer tierNumber;//层的数量
-    private String areaType;//箱区吊机的类型
-    private Integer dispatchedWork;//该箱区已指派的任务数量，可为空 自动配载这个数据无法提供
-    private Integer preDispatchedWork;//该箱区预估的任务, 可为空
+    private String areaNo; // 箱区ID
+    private Integer bayNumber; // 箱区倍位数
+    private Integer rowNumber; // 排的数量
+    private Integer tierNumber; // 层的数量
+    private String areaType; // 箱区吊机的类型
+    private Integer dispatchedWork; // 该箱区已指派的任务数量，可为空 自动配载这个数据无法提供
+    private Integer preDispatchedWork; // 该箱区预估的任务, 可为空
 
 
     public Integer getPreDispatchedWork() {

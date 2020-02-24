@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * Created by csw on 2017/6/8.
- * Description:
+ * Description: 船舶CWP作业块信息
  */
 public class SmartCwpWorkBlockInfo {
 

@@ -1,8 +1,8 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by liuminhang on 2017/1/18.
- * 排信息
+ * Created by csw on 2018/9/16.
+ * Description: 排信息
  */
 public class SmartVpsVslRowsInfo {
     private Long bayId;// 倍位ID,小贝

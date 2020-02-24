@@ -48,12 +48,6 @@ public class SmartStowImportData {
 
 
     /**
-     * 船舶重量要求信息
-     */
-    private List<SmartVesselWholeWeightInfo> smartVesselWholeWeightInfoList;
-
-
-    /**
      * 属性组信息
      */
     private List<SmartContainerGroupInfo> smartContainerGroupInfoList;
@@ -116,10 +110,6 @@ public class SmartStowImportData {
      */
 
     private List<SmartYardWorkTimeInfo> smartYardWorkTimeInfoList;
-    /**
-     * 39、	箱子作业时间配置信息
-     */
-    private List<SmartCntrWorkTimeInfo> smartCntrWorkTimeInfoList;
 
 
     public List<SmartScheduleIdInfo> getSmartScheduleIdInfoList() {
@@ -190,16 +180,6 @@ public class SmartStowImportData {
 
     public void setSmartVesselTierWeightInfoList(List<SmartVesselTierWeightInfo> smartVesselTierWeightInfoList) {
         this.smartVesselTierWeightInfoList = smartVesselTierWeightInfoList;
-    }
-
-    public List<SmartVesselWholeWeightInfo> getSmartVesselWholeWeightInfoList() {
-        if (smartVesselWholeWeightInfoList == null)
-            smartVesselWholeWeightInfoList = new ArrayList<>();
-        return smartVesselWholeWeightInfoList;
-    }
-
-    public void setSmartVesselWholeWeightInfoList(List<SmartVesselWholeWeightInfo> smartVesselWholeWeightInfoList) {
-        this.smartVesselWholeWeightInfoList = smartVesselWholeWeightInfoList;
     }
 
     public List<SmartContainerGroupInfo> getSmartContainerGroupInfoList() {
@@ -321,16 +301,6 @@ public class SmartStowImportData {
 
     public void setSmartYardWorkTimeInfoList(List<SmartYardWorkTimeInfo> smartYardWorkTimeInfoList) {
         this.smartYardWorkTimeInfoList = smartYardWorkTimeInfoList;
-    }
-
-    public List<SmartCntrWorkTimeInfo> getSmartCntrWorkTimeInfoList() {
-        if (smartCntrWorkTimeInfoList == null)
-            smartCntrWorkTimeInfoList = new ArrayList<>();
-        return smartCntrWorkTimeInfoList;
-    }
-
-    public void setSmartCntrWorkTimeInfoList(List<SmartCntrWorkTimeInfo> smartCntrWorkTimeInfoList) {
-        this.smartCntrWorkTimeInfoList = smartCntrWorkTimeInfoList;
     }
 
 

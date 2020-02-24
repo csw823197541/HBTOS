@@ -1,14 +1,15 @@
 package com.shbtos.biz.smart.cwp.pojo;
 
 /**
- * Created by Administrator on 2017/2/28.
+ * Created by csw on 2018/9/16.
+ * Description: 重量等级分组
  */
 public class SmartWeightGroupInfo {
+
     private Long berthId;//靠泊ID
     private Long weightId; //重量等级ID
     private Double minWeight;//最小重量
     private Double maxWeight;//最大重量
-
 
     public Double getMinWeight() {
         return minWeight;

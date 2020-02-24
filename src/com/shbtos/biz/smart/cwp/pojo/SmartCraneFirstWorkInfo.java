@@ -2,7 +2,7 @@ package com.shbtos.biz.smart.cwp.pojo;
 
 /**
  * Created by csw on 2018/7/18.
- * Description:
+ * Description: 桥机上手开路的倍位设置信息
  */
 public class SmartCraneFirstWorkInfo {
 

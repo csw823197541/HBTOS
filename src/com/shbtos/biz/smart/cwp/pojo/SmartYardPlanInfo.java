@@ -9,12 +9,12 @@ import java.util.Date;
  */
 public class SmartYardPlanInfo {
 
-    private Long berthId; //靠泊Id
-    private Long voyageId; //航次ID要
-    private String areaNo; //箱区ID
-    private String filter; //区间对放规则
-    private Date planStartTime; //区间开始时间
-    private Data planEndTime; //区间结束时间
+    private Long berthId; // 靠泊Id
+    private Long voyageId; // 航次ID要
+    private String areaNo; // 箱区ID
+    private String filter; // 区间对放规则
+    private Date planStartTime; // 区间开始时间
+    private Data planEndTime; // 区间结束时间
 
     public Long getBerthId() {
         return berthId;

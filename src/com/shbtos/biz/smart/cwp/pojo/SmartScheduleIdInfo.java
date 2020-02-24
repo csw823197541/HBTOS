@@ -3,7 +3,7 @@ package com.shbtos.biz.smart.cwp.pojo;
 import java.util.Date;
 
 /**
- * Created by liuminhang on 2017/1/19.
+ * Created by csw on 2017/1/19.
  * 航次信息，计划开工和完工时间是用进口和出口时间的最大范围时间，用于估算船舶船期和作业时间。
  */
 public class SmartScheduleIdInfo {
